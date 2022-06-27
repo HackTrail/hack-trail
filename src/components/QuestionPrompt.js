@@ -4,7 +4,7 @@ import Question from './Question';
 import ImageContainer from './ImageContainer'
 import './QuestionPrompt.css';
 
-export const QuestionPrompt = ({question, image, options}) => {
+const QuestionPrompt = ({question, image, options}) => {
     return (
         <div className="questionPrompt">
             <ImageContainer image={image}/>
@@ -12,3 +12,5 @@ export const QuestionPrompt = ({question, image, options}) => {
         </div>
     );
 }
+
+export default QuestionPrompt

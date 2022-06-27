@@ -13,7 +13,7 @@ h1 {
   text-shadow: 0 0 3px black;
 }
 
-p {
+p, div {
   text-align: center;
   font-size: 36px;
   color: #555555;
@@ -37,13 +37,13 @@ button:hover {
   background-color: #555555;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1000px;
   margin: auto;
   padding: 40px;
 }
 
-.centered-button-wrapper{
+.centered-button-wrapper {
   text-align: center;
 }
 

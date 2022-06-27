@@ -1,7 +1,7 @@
 import React from "react";
-import {useState} from 'react';
-import { ImageContainer } from "./ImageContainer"
-import { QuestionPrompt } from "./QuestionPrompt"
+import { useState } from 'react';
+import ImageContainer from "./ImageContainer"
+import QuestionPrompt from "./QuestionPrompt"
 
 const Start = ({image, questions}) => {
     const [isShown, setIsShown] = useState(false);
