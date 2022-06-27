@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import QuestionPrompt from './components/QuestionPrompt';
 
 function App() {
+
+  const questions = require('./components/data/questionsData.json')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    questions.map((questionPrompt) => {
+      return <QuestionPrompt key={questionPrompt.id} question={questionPrompt.question} image={questionPrompt.image} options={questionPrompt.options} />
+    })
   );
 }
 
