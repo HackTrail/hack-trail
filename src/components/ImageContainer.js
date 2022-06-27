@@ -1,9 +1,7 @@
 import React from "react"
 
-const ImageContainer = ({image}) => {
+export const ImageContainer = ({image}) => {
     return (
-        <div>{image}</div>
+        <img className="center" src={image}></img>
     )
 }
-
-export default ImageContainer

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Question = ({question, options}) => {
+export const Question = ({question, options}) => {
     return (
         <div className="question">
             <div>{question}</div>
@@ -8,5 +8,3 @@ const Question = ({question, options}) => {
         </div>
     );
 }
-
-export default Question
