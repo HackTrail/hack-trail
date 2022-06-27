@@ -5,7 +5,7 @@ const Prompt = ({question, image, options}) => {
         <div>
             {question}
             {image}
-            {options}
+            {JSON.stringify(options)}
         </div>
     );
 }

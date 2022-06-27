@@ -53,7 +53,7 @@ function App() {
 
   return (
     questions.map((questionPrompt) => {
-      return <Prompt key={questionPrompt.id} question={questionPrompt.question} image={questionPrompt.image} option={questionPrompt.options} />
+      return <Prompt key={questionPrompt.id} question={questionPrompt.question} image={questionPrompt.image} options={questionPrompt.options} />
     })
   );
 }
