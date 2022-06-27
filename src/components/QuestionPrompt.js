@@ -1,7 +1,8 @@
 import React from "react";
-import { Question } from "./Question"
-import { ImageContainer } from "./ImageContainer"
-import './Prompt.css';
+
+import Question from './Question';
+import ImageContainer from './ImageContainer'
+import './QuestionPrompt.css';
 
 const QuestionPrompt = ({question, image, options}) => {
     return (
