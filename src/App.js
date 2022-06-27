@@ -1,5 +1,5 @@
 import './App.css';
-import Prompt from './components/Prompt';
+import QuestionPrompt from './components/QuestionPrompt';
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     questions.map((questionPrompt) => {
-      return <Prompt key={questionPrompt.id} question={questionPrompt.question} image={questionPrompt.image} options={questionPrompt.options} />
+      return <QuestionPrompt key={questionPrompt.id} question={questionPrompt.question} image={questionPrompt.image} options={questionPrompt.options} />
     })
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import './Prompt.css';
 
-const Prompt = ({question, image, options}) => {
+const QuestionPrompt = ({question, image, options}) => {
     return (
         <div className="questionPrompt">
             <div>{image}</div>
@@ -11,4 +11,4 @@ const Prompt = ({question, image, options}) => {
     );
 }
 
-export default Prompt
+export default QuestionPrompt
