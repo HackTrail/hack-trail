@@ -7,7 +7,7 @@ const Question = (props) => {
         <div className="question">
             <div>{props.question}</div>
             <div>{props.options.map((item) => 
-                (<button type="button" key={uuidv4()} onClick={()=>props.pickchoice(props.options.choice)}>
+                (<button type="button" key={uuidv4()} onClick={props.nextQuestion}>
                     {item.option}
                 </button>)
             )}

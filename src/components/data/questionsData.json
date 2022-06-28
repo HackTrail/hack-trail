@@ -4,12 +4,12 @@
       "question": "What do you choose?",
       "image": "url-link/relative-link-in-assets",
       "options": [{
-        "choice": 1,
+        "choiceid": 1,
         "option": "Choose and move to 2",
         "nextId": 2
       },
       {
-        "choice": 2,
+        "qid": 2,
         "option": "Choose and move to 3",
         "nextId": 3
       }
@@ -20,12 +20,12 @@
       "question": "What do you choose2?",
       "image": "url-link/relative-link-in-assets",
       "options": [{
-        "choice": 1,
+        "choiceid": 3,
         "option": "Choose and move to 4",
         "nextId": 2
       },
       {
-        "choice": 2,
+        "choiceid": 4,
         "option": "Choose and move to 5",
         "nextId": 3
       }
@@ -36,12 +36,12 @@
       "question": "What do you choose?",
       "image": "url-link/relative-link-in-assets",
       "options": [{
-        "choice": 1,
+        "choiceid": 5,
         "option": "Choose and move to 2",
         "nextId": 2
       },
       {
-        "choice": 2,
+        "choiceid": 6,
         "option": "Choose and move to 3",
         "nextId": 3
       }
