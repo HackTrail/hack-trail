@@ -1,94 +1,111 @@
 [
-    {
-      "id": 1,
-      "question": "It's 1914. You are a 35 yr old developer named Muffin McMuffy in Merkely, CA you have major influence over local politics because you've greased a few palms in your day...",
+  {
+    "id": 1,
+    "question": {
+      "text": "You hear about a new business coming to town and you don't approve of the new owners. What do you want to tell the politicians and neighbors?",
       "image": "q1_house_1.png",
       "options": [{
         "choiceid": 1,
-        "option": "Choose and move to 2",
-        "nextId": 2
-      },
-      {
-        "qid": 2,
-        "option": "Choose and move to 3",
-        "nextId": 3
-      }
-    ]
+        "option": "This makes me uncomfortable, I vote for single family zoning.",
+        "effects": [-1,0,0],
+        "consequence": 0
+        },
+        {
+          "choiceid": 2,
+          "option": "Let's welcome them and make our neighborhood more diverse!",
+          "effects": [1,0,0],
+          "consequence": 1
+        },
+        {
+          "choiceid": 3,
+          "option": "I mind my own business and keep to myself.",
+          "effects": [-1,0,0],
+          "consequence": 0
+        }
+      ],
+      "consequences": [
+        "people are over crowding in single family homes creating squalid conditions",
+        "apartments are built to accommodate spiking population of low-income folks"
+      ]
+    },
+    "event": "Sudden uptick in immigration from Europe",
+    "fact": "in 1914 Duncan McDuffie eal estate developer Duncan McDuffie was one of the early proponents of single-family zoning in this neighborhood of Berkeley to prevent a dance hall owned by a Black resident from moving into houses he was trying to sell. He worried that families of color moving into the neighborhood would decrease the desirability of the neighborhood and decrease property values. By advocating for single-family zoning, McDuffie and other developers at the time were attempting to price out social groups whom they deemed to be less desirable for the neighborhood.[1] This makes single-family zoning one of many exclusionary zoning policies intended to limit who was able to afford living in a certain neighborhood. The goal of limiting certain neighborhoods to only single-family homes meant that only families who could afford to buy an entire house could live in the neighborhood. There was not the option to subdivide housing so that families who could not afford to buy the whole property could live in smaller units.",
+  }, 
+
+  {
+    "id": 2,
+    "question": "What do you choose2?",
+    "image": "q2_trees_2.png",
+    "options": [{
+      "choiceid": 3,
+      "option": "Choose and move to 4",
+      "nextId": 2
     },
     {
-      "id": 2,
-      "question": "What do you choose2?",
-      "image": "q2_trees_2.png",
-      "options": [{
-        "choiceid": 3,
-        "option": "Choose and move to 4",
-        "nextId": 2
-      },
-      {
-        "choiceid": 4,
-        "option": "Choose and move to 5",
-        "nextId": 3
-      }
-    ]
-    },
-    {
-      "id": 3,
-      "question": "What do you choose?",
-      "image": "q3_earthquake_1.png",
-      "options": [{
-        "choiceid": 5,
-        "option": "Choose and move to 2",
-        "nextId": 2
-      },
-      {
-        "choiceid": 6,
-        "option": "Choose and move to 3",
-        "nextId": 3
-      }
-    ]
-    },
-    {
-      "id": 4,
-      "question": "What do you choose?",
-      "image": "q4_bicycle_1.png",
-      "options": [{
-        "option": "Choose and move to 2",
-        "nextId": 2
-      },
-      {
-        "option": "Choose and move to 3",
-        "nextId": 3
-      }
-    ]
-    },
-    {
-      "id": 5,
-      "question": "What do you choose?",
-      "image": "q5_people_1.png",
-      "options": [{
-        "option": "Choose and move to 2",
-        "nextId": 2
-      },
-      {
-        "option": "Choose and move to 3",
-        "nextId": 3
-      }
-    ]
-    },
-    {
-      "id": 6,
-      "question": "What do you choose?",
-      "image": "q6_law_1.png",
-      "options": [{
-        "choiceid": 5,
-        "option": "Choose and move to 2",
-        "nextId": 2
-      },
-      {
-        "choiceid": 6,
-        "option": "Choose and move to 3",
-        "nextId": 3
-      }
-    ]
+      "choiceid": 4,
+      "option": "Choose and move to 5",
+      "nextId": 3
     }
   ]
+  },
+  {
+    "id": 3,
+    "question": "What do you choose?",
+    "image": "q3_earthquake_1.png",
+    "options": [{
+      "choiceid": 5,
+      "option": "Choose and move to 2",
+      "nextId": 2
+    },
+    {
+      "choiceid": 6,
+      "option": "Choose and move to 3",
+      "nextId": 3
+    }
+  ]
+  },
+  {
+    "id": 4,
+    "question": "What do you choose?",
+    "image": "q4_bicycle_1.png",
+    "options": [{
+      "option": "Choose and move to 2",
+      "nextId": 2
+    },
+    {
+      "option": "Choose and move to 3",
+      "nextId": 3
+    }
+  ]
+  },
+  {
+    "id": 5,
+    "question": "What do you choose?",
+    "image": "q5_people_1.png",
+    "options": [{
+      "option": "Choose and move to 2",
+      "nextId": 2
+    },
+    {
+      "option": "Choose and move to 3",
+      "nextId": 3
+    }
+  ]
+  },
+  {
+    "id": 6,
+    "question": "What do you choose?",
+    "image": "q6_law_1.png",
+    "options": [{
+      "choiceid": 5,
+      "option": "Choose and move to 2",
+      "nextId": 2
+    },
+    {
+      "choiceid": 6,
+      "option": "Choose and move to 3",
+      "nextId": 3
+    }
+  ]
+  }
+]
