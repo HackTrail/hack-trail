@@ -2,6 +2,7 @@ import { db } from './firebase';
 import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
 
+// Get the number of times players have recorded this outcome
 export const getOutcomeTally = async (outcomeId) => {
     const outcomeSnapshot = await getDoc(doc(db, 'results', outcomeId));
     if (outcomeSnapshot.exists()) {
@@ -16,6 +17,7 @@ const setOutcome = async (outcomeId) => {
     await setDoc(outcomeRef, {})
 }
 
+// Increment the tally for this outcome
 export const incrementOutcomeTally = async (outcomeId) => {
     const outcomeRef = doc(db, "results", outcomeId);
     let outcomeSnapshot = await getDoc(outcomeRef);
@@ -46,6 +48,7 @@ async function questionRefAndSnapshot(questionId) {
     return [questionRef, questionSnapshot];
 }
 
+// Get the number of times players have answered this question with this answer and the total number of times players have answered this question
 export const getQuestionAnswerTally = async (questionId, answerId) => {
     const [, questionSnapshot] = await questionRefAndSnapshot(questionId);
     if (questionSnapshot.exists()) {
@@ -65,6 +68,7 @@ export async function setQuestion(questionId) {
     await setDoc(questionRef, {})
 }
 
+// Increment the tally for this answer for this question
 export const incrementQuestionAnswerTally = async (questionId, answerId) => {
     let [questionRef, questionSnapshot] = await questionRefAndSnapshot(questionId);
 
