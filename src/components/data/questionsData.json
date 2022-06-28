@@ -4,10 +4,12 @@
       "question": "What do you choose?",
       "image": "url-link/relative-link-in-assets",
       "options": [{
+        "choice": 1,
         "option": "Choose and move to 2",
         "nextId": 2
       },
       {
+        "choice": 2,
         "option": "Choose and move to 3",
         "nextId": 3
       }
@@ -18,10 +20,12 @@
       "question": "What do you choose2?",
       "image": "url-link/relative-link-in-assets",
       "options": [{
+        "choice": 1,
         "option": "Choose and move to 4",
         "nextId": 2
       },
       {
+        "choice": 2,
         "option": "Choose and move to 5",
         "nextId": 3
       }
@@ -32,10 +36,12 @@
       "question": "What do you choose?",
       "image": "url-link/relative-link-in-assets",
       "options": [{
+        "choice": 1,
         "option": "Choose and move to 2",
         "nextId": 2
       },
       {
+        "choice": 2,
         "option": "Choose and move to 3",
         "nextId": 3
       }
