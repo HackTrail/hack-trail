@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "question": "What do you choose?",
+      "question": "It's 1914. You are a 35 yr old developer named Muffin McMuffy in Merkely, CA you have major influence over local politics because you've greased a few palms in your day...",
       "image": "house_without_sun_grass.png",
       "options": [{
         "option": "Choose and move to 2",
