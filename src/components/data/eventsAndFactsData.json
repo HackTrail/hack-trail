@@ -1,0 +1,80 @@
+[
+  {
+      "id": 1,
+      "event": "Sudden uptick in immigration from Europe",
+      "fact": "in 1914 Duncan McDuffie eal estate developer Duncan McDuffie was one of the early proponents of single-family zoning in this neighborhood of Berkeley to prevent a dance hall owned by a Black resident from moving into houses he was trying to sell. He worried that families of color moving into the neighborhood would decrease the desirability of the neighborhood and decrease property values. By advocating for single-family zoning, McDuffie and other developers at the time were attempting to price out social groups whom they deemed to be less desirable for the neighborhood.[1] This makes single-family zoning one of many exclusionary zoning policies intended to limit who was able to afford living in a certain neighborhood. The goal of limiting certain neighborhoods to only single-family homes meant that only families who could afford to buy an entire house could live in the neighborhood. There was not the option to subdivide housing so that families who could not afford to buy the whole property could live in smaller units.",
+      "links": [
+        "https://en.wikipedia.org/wiki/Duncan_McDuffie",
+        "https://en.wikipedia.org/wiki/Single-family_zoning#cite_note-KQED-1",
+        "https://en.wikipedia.org/wiki/Single-family_zoning#cite_note-B-side_1-13"
+      ]
+  },
+  {
+    "id": 2,
+      "event": "The town university is so popular that it wants to expand.",
+      "fact": "In 1926, the Supreme Court upheld exclusionary zoning in a vote of 6-3 during the case Euclid v. Ambler. Exclusionary zoning today is also known as Euclidean zoning for this reason.",
+      "links": [
+        "https://en.wikipedia.org/wiki/Duncan_McDuffie",
+        "https://en.wikipedia.org/wiki/Single-family_zoning#cite_note-KQED-1",
+        "https://en.wikipedia.org/wiki/Single-family_zoning#cite_note-B-side_1-13"
+      ]
+  },
+  {
+    "id": 3,
+    "event": "Your mom decides to downsize, she is sick of taking care of a big house, and ready for a fresh start, plus she wants to be nearby to help out with your new baby.",
+    "fact": "Minimum Lot Sizes used to be necessary to allow room for septic tanks and wells, but now are no longer needed. Austin, TX has an average lot size of 8,629 sq ft, and Philadelphia, PA has an average lot size of 1,089 sq ft.",
+    "links": [
+      "https://www.strongtowns.org/journal/2019/6/19/do-minimum-lot-size-rules-matter",
+      "https://www.storagecafe.com/blog/lot-size-home-size-in-top-20-biggest-us-cities/"
+    ]
+  },
+  {
+    "id": 4,
+    "event": "The city decides to implement \"First Fridays\" where the first Friday of the month is dedicated to local art galleries and musicians, an event for the whole family",
+    "fact": "Transportation planners point out that parking minimums increase the distance between destinations, making cities and towns less walkable, thereby perpetuating a cycle of less viable transit and mobility options, the need for more driving, and—subsequently—even more parking.",
+    "links": [
+      "https://www.strongtowns.org/journal/2019/6/19/do-minimum-lot-size-rules-matter"
+    ]
+  },
+  {
+    "id": 5,
+    "event": "The Federal government distributes funds to build housing for homeless veterans",
+    "fact": "Environmental studies are often used to prevent new housing from being built in cities, and often causes environment destruction outside of cities. In LA, a local nonprofit developer proposed several years ago to build a 49-unit apartment building on the lot—with 24 homes set aside for disabled veterans experiencing homelessness—it was slammed with an environmental lawsuit. A single angry neighbor was able to delay the project, thanks to a piece of legislation known as the California Environmental Quality Act. Although a 189-page assessment found that all possible environmental effects could be mitigated, the suit demanded that planners spend years conducting additional environmental research. The site—covered in cracked concrete and lined with a barbed-wire-topped chain-link fence—remains empty to this day.",
+    "links": [
+      "https://www.latimes.com/opinion/editorials/la-ed-el-mercado-lorena-lawsuit-20180421-story.html",
+      "https://www.theatlantic.com/ideas/archive/2021/03/signature-environmental-law-hurts-housing/618264/"
+    ]
+  },
+  {
+    "id": 6,
+    "event": "You are awarded an honorable citizen award from the mayor and get invited to a fancy banquet at the waterfront downtown.",
+    "fact": "In 1989, an earthquake deeply damaged the Embarcadero Freeway in San Francisco. The freeway was cleared and converted into a boulevard - housing in the area increased 51% and jobs increased 23%.",
+    "links": [
+      "https://www.cnu.org/highways-boulevards/model-cities/embarcadaro"
+    ]
+  },
+  {
+    "id": 7,
+    "event": "It's your child's first day of school!",
+    "fact": "In the 1970s in Amsterdam, 9 people were killed everyday in traffic. People started mass protests to stop roadway expansion and demand bicycling infrastructure. Their main slogan was \"stop the child murder\". The Dutch are known for their incredible bicycling infrastructure today, and people of all ages and abilities are mobile in their cities.",
+    "links": [
+      "https://www.youtube.com/watch?v=SYHz93HXJFQ&t=0s&ab_channel=BicycleDutch"
+    ]
+  },
+  {
+    "id": 8,
+    "event": "You have dinner reservations for your anniversary this coming weekend at your favorite restaurant.",
+    "fact": "The National Fair Share Act was proposed by John Boger in 1993. He proposed that non-integrated neighborhoods should lose mortgage interest and property tax deductions unless they have a proportion of African American and low- and moderate-income population in its region.",
+    "links": [
+      "https://scholarship.law.unc.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=3508&context=nclr"
+    ]
+  },
+  {
+    "id": 8,
+    "event": "You have a rough day at work and are getting home at the end of the day.",
+    "fact": "Modern construction codes require fireproofing shared walls. Rowhomes can add charm and community to a neighborhood and are a great option for families to live in a city center, however are illegal to build in most cities.",
+    "links": [
+      "https://www.strongtowns.org/journal/2017/10/23/the-problem-with-setbacks"
+    ]
+  }
+]
