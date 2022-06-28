@@ -15,14 +15,13 @@ function App() {
   }
   const nextQuestion = () => {
     setAnswered(answered+1);
-    console.log(answered)
   }  
 
   const questions = require('./components/data/questionsData.json')
   return (
     <div>
         {isInStart ? (
-          <Start image={startImage} questions={questions} />
+          <Start startGame={startGame} image={startImage} questions={questions} />
         ) : <div/>}
         {answered>=0 && answered<3 ? (
             <QuestionPrompt nextQuestion={nextQuestion} key={questions[answered].id} question={questions[answered].question} image={questions[answered].image} options={questions[answered].options} />
