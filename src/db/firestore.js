@@ -2,28 +2,31 @@ import { db } from './firebase';
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 
-export const getOutcome = async (id) => {
-    const outcomeSnapshot = await getDoc(doc(db, 'results', id));
+export const getOutcomeTally = async (outcomeId) => {
+    const outcomeSnapshot = await getDoc(doc(db, 'results', outcomeId));
     if (outcomeSnapshot.exists()) {
-        return outcomeSnapshot.data();
+        return outcomeSnapshot.data()['value'];
     } else {
         console.log("Outcome doesn't exist");
     }
 };
 
-export const incrementOutcome = async (id) => {
-    const outcomeRef = doc(db, "results", id);
+export const incrementOutcomeTally = async (outcomeId) => {
+    const outcomeRef = doc(db, "results", outcomeId);
     const outcomeSnapshot = await getDoc(outcomeRef);
     if (!outcomeSnapshot.exists()) {
         console.log("Outcome doesn't exist");
         return;
     }
-    const currValue = outcomeSnapshot.data().value;
+
+    let currValue = outcomeSnapshot.data()['value'];
+    currValue++;
 
     await updateDoc(outcomeRef, {
-        value: currValue + 1
+        value: currValue
     });
-    return currValue;
+
+    return currValue
 };
 
 async function questionRefAndSnapshot(questionId) {
