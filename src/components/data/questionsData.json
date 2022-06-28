@@ -8,15 +8,13 @@
           "choiceId": 1,
           "option": "Choose and move to 2",
           "densityEffect": 1,
-          "infrastructureEffect": 1,
-          "nextId": 2
+          "infrastructureEffect": 1
         },
         {
           "choiceId": 2,
           "option": "Choose and move to 3",
           "densityEffect": 1,
-          "infrastructureEffect": 1,
-          "nextId": 2
+          "infrastructureEffect": 1
         }
       ]
     },
@@ -32,15 +30,13 @@
           "choiceId": 1,
           "option": "Choose and move to 2",
           "densityEffect": -1,
-          "infrastructureEffect": -1,
-          "nextId": null
+          "infrastructureEffect": -1
         },
         {
           "choiceId": 2,
           "option": "Choose and move to 3",
           "densityEffect": -1,
-          "infrastructureEffect": -1,
-          "nextId": null
+          "infrastructureEffect": -1
         }
       ]
     },
