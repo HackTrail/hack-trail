@@ -7,6 +7,7 @@ import Start from './components/Start';
 import Info from './components/Info';
 
 import startImage from './images/start_screen.png';
+import { clearChoicesRecord } from "./utils/utils";
 
 function App() {
   const [isInStart, setIsInStart] = useState(true);
@@ -14,6 +15,7 @@ function App() {
   const [isInInfo, setIsInInfo] = useState(false);
 
   const startGame = () => {
+    clearChoicesRecord()
     setIsInStart(false);
     setQuestionsSeen(questionsSeen+1)
   }
