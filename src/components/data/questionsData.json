@@ -2,7 +2,7 @@
     {
       "id": 1,
       "question": "It's 1914. You are a 35 yr old developer named Muffin McMuffy in Merkely, CA you have major influence over local politics because you've greased a few palms in your day...",
-      "image": "house_without_sun_grass.png",
+      "image": "q1_house_1.png",
       "options": [{
         "option": "Choose and move to 2",
         "nextId": 2
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "question": "What do you choose2?",
-      "image": "url-link/relative-link-in-assets",
+      "image": "q2_trees_2",
       "options": [{
         "option": "Choose and move to 4",
         "nextId": 2
@@ -30,7 +30,49 @@
     {
       "id": 3,
       "question": "What do you choose?",
-      "image": "url-link/relative-link-in-assets",
+      "image": "q3_earthquake_1",
+      "options": [{
+        "option": "Choose and move to 2",
+        "nextId": 2
+      },
+      {
+        "option": "Choose and move to 3",
+        "nextId": 3
+      }
+    ]
+    },
+    {
+      "id": 4,
+      "question": "What do you choose?",
+      "image": "q4_bicycle_1",
+      "options": [{
+        "option": "Choose and move to 2",
+        "nextId": 2
+      },
+      {
+        "option": "Choose and move to 3",
+        "nextId": 3
+      }
+    ]
+    },
+    {
+      "id": 5,
+      "question": "What do you choose?",
+      "image": "q5_people_1",
+      "options": [{
+        "option": "Choose and move to 2",
+        "nextId": 2
+      },
+      {
+        "option": "Choose and move to 3",
+        "nextId": 3
+      }
+    ]
+    },
+    {
+      "id": 6,
+      "question": "What do you choose?",
+      "image": "q6_law_1",
       "options": [{
         "option": "Choose and move to 2",
         "nextId": 2
