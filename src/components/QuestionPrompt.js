@@ -8,7 +8,7 @@ const QuestionPrompt = (props) => {
     return (
         <div className="questionPrompt wrapper">
             <ImageContainer className="questionImages" image={imageName}/>
-            <Question nextInfo={props.nextInfo} question={props.question} options={props.options}/>
+            <Question id={props.id} nextInfo={props.nextInfo} updateScores={props.updateScores} question={props.text} options={props.options}/>
         </div>
     );
 }
