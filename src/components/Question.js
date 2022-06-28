@@ -10,7 +10,7 @@ const Question = (props) => {
             <div className="options">
                 {
                     props.options.map((each, index) => {
-                        return (<button className="option" key={uuidv4()} onClick={props.nextQuestion}>
+                        return (<button className="option" key={uuidv4()} onClick={props.nextInfo}>
                                 {index+1 + ". " + each.option}
                             </button>)
                     })
