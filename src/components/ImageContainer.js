@@ -1,8 +1,9 @@
 import React from "react"
+import './ImageContainer.css'
 
-const ImageContainer = ({image}) => {
+const ImageContainer = ({className, image}) => {
     return (
-        <img className="center" src={image}></img>
+        <img className={className} src={image}></img>
     )
 }
 
