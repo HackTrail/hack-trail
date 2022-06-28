@@ -2,7 +2,7 @@ import React from "react"
 
 const ImageContainer = ({image}) => {
     return (
-        <div>{image}</div>
+        <img className="center" src={image}></img>
     )
 }
 
