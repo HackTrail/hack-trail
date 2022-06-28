@@ -1,6 +1,6 @@
 import React from "react";
 import ImageContainer from "./ImageContainer"
-import startImage from '../images/start_screen.png'; // placeholder
+import startImage from '../images/lightbulb.png';
 
 const Info = ({nextQuestion, text}) => {
     return (
