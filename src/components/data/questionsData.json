@@ -23,10 +23,9 @@
       }
     ]
   },
-
   {
     "id": 2,
-    "question": "Single Family Zoning is being argued in the Supreme Court.  Luckily you know a few of the Justices and they will listen to your opinion. What do you want to tell them?",
+    "question": "Single Family Zoning is being argued in the Supreme Court. Luckily you know a few of the Justices and they will listen to your opinion. What do you want to tell them?",
     "image": "q2_trees_2.png",
     "options": [{
       "choiceid": 4,
@@ -36,7 +35,7 @@
       },
       {
         "choiceid": 5,
-        "option": "It's important to protect the character of a neighborhood.  If a majority of people in a region want to exclude certain housing types, they should be free to do so.",
+        "option": "It's important to protect the character of a neighborhood. If a majority of people in a region want to exclude certain housing types, they should be free to do so.",
         "densityEffect": -1,
         "infrastractureEffect": 0
       },
@@ -56,29 +55,57 @@
   },
   {
     "id": 3,
-    "question": "What do you choose3?",
+    "question": "Your coworker bought a plot of land in your neighborhood. They want to split it into two and build four tiny homes - one to live in and 3 to rent out. They are complaining to you that the city won't let them because there is a minimum lot size that a house can be in the region. He asked if you could influence city council to lower the size to allow for a tiny home. What do you want to do?",
     "image": "q3_earthquake_1.png",
     "options": [{
-      "choiceid": 5,
-      "option": "some choice"
-    },
-    {
-      "choiceid": 6,
-      "option": "some choice"
-    }
-  ]
+      "choiceid": 8,
+      "option": "Tiny homes are neat, why not? Advocate to get minimum lot size significantly lowered.",
+      "densityEffect": 1,
+      "infrastractureEffect": 0
+      },
+      {
+        "choiceid": 9,
+        "option": "Having renters living in tiny homes could change the character of the neighborhood. This doesn't seem like a good idea.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0
+      },
+      {
+        "choiceid": 10,
+        "option": "They should have looked into this before buying the land. Sounds like their problem, not mine.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0
+      },
+      {
+        "choiceid": 11,
+        "option": "If the minimum lot size is lowered, I could divide my lot in order to build a tiny home for my aging mother to live in. This would help me out too! You advocate for this change.",
+        "densityEffect": 1,
+        "infrastractureEffect": 1
+      }
+    ]
   },
   {
     "id": 4,
-    "question": "What do you choose4?",
+    "question": "Your friend purchased a brand new 1955 Chevy Bel Air and wants to be sure they can park it for free anywhere in the city. They ask for your help bringing this plan to life. What do you tell city council?",
     "image": "q4_bicycle_1.png",
     "options": [{
-      "option": "some choice"
-    },
-    {
-      "option": "some choice"
-    }
-  ]
+      "choiceid": 12,
+      "option": "You don't believe in the city subsidizing free parking. Let the market decide how much parking is built.",
+      "densityEffect": 1,
+      "infrastractureEffect": 1
+      },
+      {
+        "choiceid": 13,
+        "option": "You think we can move more people with public transit and don't want to fund free parking.",
+        "densityEffect": 1,
+        "infrastractureEffect": 1
+      },
+      {
+        "choiceid": 14,
+        "option": "You have a nice car too and love the idea.  We need as much parking as possible to prevent crowded streets!",
+        "densityEffect": -1,
+        "infrastractureEffect": -1
+      }
+    ]
   },
   {
     "id": 5,
