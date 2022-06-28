@@ -1,15 +1,14 @@
 import React from "react";
-
 import Question from './Question';
 import ImageContainer from './ImageContainer'
 import './QuestionPrompt.css';
 
-
 const QuestionPrompt = (props) => {
+    const imageName = require(`../images/${props.image}`)
     return (
         <div className="questionPrompt wrapper">
-            <ImageContainer image={props.image}/>
-            <Question nextQuestion={props.nextQuestion} question={props.question} options={props.options}/>
+            <ImageContainer className="questionImages" image={imageName}/>
+            <Question nextInfo={props.nextInfo} question={props.question} options={props.options}/>
         </div>
     );
 }

@@ -1,0 +1,20 @@
+.question {
+    border: 3px solid #555555;
+    border-radius: 8px;
+    background-color: #F3F3F3;
+    margin: 30px;
+    padding: 20px;
+}
+
+.option {
+    display: block;
+    border: none;
+    background-color: #FFFFFF;
+    color: #555555;
+    padding: 0px;
+}
+
+.option:hover {
+    background-color: #FFFFFF;
+    color: #C82B2B;
+}

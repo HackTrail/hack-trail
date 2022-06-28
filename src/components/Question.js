@@ -1,16 +1,20 @@
 import React from "react";
+import './Question.css';
 import { v4 as uuidv4 } from 'uuid';
 // onSelect and onSubmit
 
 const Question = (props) => {
     return (
-        <div className="question">
-            <div>{props.question}</div>
-            <div>{props.options.map((item) => 
-                (<button type="button" key={uuidv4()} onClick={props.nextQuestion}>
-                    {item.option}
-                </button>)
-            )}
+        <div>
+            <div className="question">{props.question}</div>
+            <div className="options">
+                {
+                    props.options.map((each, index) => {
+                        return (<button className="option" key={uuidv4()} onClick={props.nextInfo}>
+                                {index+1 + ". " + each.option}
+                            </button>)
+                    })
+                }
             </div>
         </div>
     );
