@@ -1,3 +1,4 @@
+import {incrementQuestionAnswerTally} from "../db/firestore";
 
 export function getChoicesRecord(){
 	let choices = localStorage.getItem('choices');
@@ -23,4 +24,6 @@ export function recordChoice(questionId, choiceId) {
     }
     choices.push({[questionId]: `${choiceId}`})
     setChoicesRecord(choices)
+
+    incrementQuestionAnswerTally(`${questionId}`, `${choiceId}`)
 }

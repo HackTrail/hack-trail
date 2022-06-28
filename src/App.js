@@ -4,12 +4,14 @@ import QuestionPrompt from './components/QuestionPrompt';
 import { useState } from 'react';
 import Start from './components/Start';
 import startImage from './images/start_screen.png';
+import { clearChoicesRecord } from "./utils/utils";
 
 function App() {
   const [isInStart, setisInStart] = useState(true);
   const [questionsSeen, setQuestionsSeen] = useState(-1);
 
   const startGame = () => {
+    clearChoicesRecord()
     setisInStart(false);
     setQuestionsSeen(questionsSeen+1)
   }
