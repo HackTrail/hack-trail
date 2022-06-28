@@ -40,7 +40,7 @@ function App() {
         return <Info nextQuestion={nextQuestion} text={"random text for now but this will come from the json"} />;
       }
       if (questionsSeen < numQuestions) { 
-        return <QuestionPrompt nextInfo={nextInfo} key={questions[questionsSeen].id} question={questions[questionsSeen].question} image={questions[questionsSeen].image} options={questions[questionsSeen].options} />;
+        return <QuestionPrompt nextInfo={nextInfo} key={questions[questionsSeen].id} question={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       else {
         return <div>

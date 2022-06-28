@@ -1,124 +1,164 @@
 [
   {
     "id": 1,
-    "question": "You hear about a new business coming to town and you don't approve of the new owners. What do you want to tell the politicians and neighbors?",
-    "image": "q1_house_1.png",
-    "options": [{
-      "choiceid": 1,
-      "option": "This makes me uncomfortable, I vote for single family zoning.",
-      "densityEffect": -1,
-      "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 2,
-        "option": "Let's welcome them and make our neighborhood more diverse!",
-        "densityEffect": 1,
-        "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 3,
-        "option": "I mind my own business and keep to myself.",
+    "question": {
+      "text": "You hear about a new business coming to town and you don't approve of the new owners. What do you want to tell the politicians and neighbors?",
+      "image": "q1_house_1.png",
+      "options": [{
+        "choiceid": 1,
+        "option": "This makes me uncomfortable, I vote for single family zoning.",
         "densityEffect": -1,
         "infrastractureEffect": 0
-      }
-    ]
+        },
+        {
+          "choiceid": 2,
+          "option": "Let's welcome them and make our neighborhood more diverse!",
+          "densityEffect": 1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 3,
+          "option": "I mind my own business and keep to myself.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        }
+      ]
+    },
+    "event": "Sudden uptick in immigration from Europe",
+    "fact": "in 1914 Duncan McDuffie eal estate developer Duncan McDuffie was one of the early proponents of single-family zoning in this neighborhood of Berkeley to prevent a dance hall owned by a Black resident from moving into houses he was trying to sell. He worried that families of color moving into the neighborhood would decrease the desirability of the neighborhood and decrease property values. By advocating for single-family zoning, McDuffie and other developers at the time were attempting to price out social groups whom they deemed to be less desirable for the neighborhood.[1] This makes single-family zoning one of many exclusionary zoning policies intended to limit who was able to afford living in a certain neighborhood. The goal of limiting certain neighborhoods to only single-family homes meant that only families who could afford to buy an entire house could live in the neighborhood. There was not the option to subdivide housing so that families who could not afford to buy the whole property could live in smaller units."
   },
   {
     "id": 2,
-    "question": "Single Family Zoning is being argued in the Supreme Court. Luckily you know a few of the Justices and they will listen to your opinion. What do you want to tell them?",
-    "image": "q2_trees_2.png",
-    "options": [{
-      "choiceid": 4,
-      "option": "The reasons people live in different types of housing is economic, this zoning segregates people and exclusionary zoning should be struck down.",
-      "densityEffect": 1,
-      "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 5,
-        "option": "It's important to protect the character of a neighborhood. If a majority of people in a region want to exclude certain housing types, they should be free to do so.",
-        "densityEffect": -1,
+    "question": { 
+      "text": "Single Family Zoning is being argued in the Supreme Court. Luckily you know a few of the Justices and they will listen to your opinion. What do you want to tell them?",
+      "image": "q2_trees_2.png",
+      "options": [{
+        "choiceid": 4,
+        "option": "The reasons people live in different types of housing is economic, this zoning segregates people and exclusionary zoning should be struck down.",
+        "densityEffect": 1,
         "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 6,
-        "option": "There's more money to be made in a neighborhood if different housing types are available.  Exclusionary zoning isn't economically smart, strike it down and deem it unconstitutional.",
-        "densityEffect": -1,
-        "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 7,
-        "option": "This isn't happening in my town so I don't think it's right for me to have an opinion here.",
-        "densityEffect": -1,
-        "infrastractureEffect": 0
-      }
-    ]
+        },
+        {
+          "choiceid": 5,
+          "option": "It's important to protect the character of a neighborhood. If a majority of people in a region want to exclude certain housing types, they should be free to do so.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 6,
+          "option": "There's more money to be made in a neighborhood if different housing types are available.  Exclusionary zoning isn't economically smart, strike it down and deem it unconstitutional.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 7,
+          "option": "This isn't happening in my town so I don't think it's right for me to have an opinion here.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        }
+      ]
+    },
+    "event": "The town university is so popular that it wants to expand.",
+    "fact": "In 1926, the Supreme Court upheld exclusionary zoning in a vote of 6-3 during the case Euclid v. Ambler. Exclusionary zoning today is also known as Euclidean zoning for this reason."
   },
   {
     "id": 3,
-    "question": "Your coworker bought a plot of land in your neighborhood. They want to split it into two and build four tiny homes - one to live in and 3 to rent out. They are complaining to you that the city won't let them because there is a minimum lot size that a house can be in the region. He asked if you could influence city council to lower the size to allow for a tiny home. What do you want to do?",
-    "image": "q3_earthquake_1.png",
-    "options": [{
-      "choiceid": 8,
-      "option": "Tiny homes are neat, why not? Advocate to get minimum lot size significantly lowered.",
-      "densityEffect": 1,
-      "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 9,
-        "option": "Having renters living in tiny homes could change the character of the neighborhood. This doesn't seem like a good idea.",
-        "densityEffect": -1,
-        "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 10,
-        "option": "They should have looked into this before buying the land. Sounds like their problem, not mine.",
-        "densityEffect": -1,
-        "infrastractureEffect": 0
-      },
-      {
-        "choiceid": 11,
-        "option": "If the minimum lot size is lowered, I could divide my lot in order to build a tiny home for my aging mother to live in. This would help me out too! You advocate for this change.",
+    "question":{
+      "text": "Your coworker bought a plot of land in your neighborhood. They want to split it into two and build four tiny homes - one to live in and 3 to rent out. They are complaining to you that the city won't let them because there is a minimum lot size that a house can be in the region. He asked if you could influence city council to lower the size to allow for a tiny home. What do you want to do?",
+      "image": "q3_earthquake_1.png",
+      "options": [{
+        "choiceid": 8,
+        "option": "Tiny homes are neat, why not? Advocate to get minimum lot size significantly lowered.",
         "densityEffect": 1,
-        "infrastractureEffect": 1
-      }
-    ]
+        "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 9,
+          "option": "Having renters living in tiny homes could change the character of the neighborhood. This doesn't seem like a good idea.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 10,
+          "option": "They should have looked into this before buying the land. Sounds like their problem, not mine.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 11,
+          "option": "If the minimum lot size is lowered, I could divide my lot in order to build a tiny home for my aging mother to live in. This would help me out too! You advocate for this change.",
+          "densityEffect": 1,
+          "infrastractureEffect": 1
+        }
+      ]
+    },
+    "event": "Your mom decides to downsize, she is sick of taking care of a big house, and ready for a fresh start, plus she wants to be nearby to help out with your new baby.",
+    "fact": "Minimum Lot Sizes used to be necessary to allow room for septic tanks and wells, but now are no longer needed. Austin, TX has an average lot size of 8,629 sq ft, and Philadelphia, PA has an average lot size of 1,089 sq ft."
   },
   {
     "id": 4,
-    "question": "Your friend purchased a brand new 1955 Chevy Bel Air and wants to be sure they can park it for free anywhere in the city. They ask for your help bringing this plan to life. What do you tell city council?",
-    "image": "q4_bicycle_1.png",
-    "options": [{
-      "choiceid": 12,
-      "option": "You don't believe in the city subsidizing free parking. Let the market decide how much parking is built.",
-      "densityEffect": 1,
-      "infrastractureEffect": 1
-      },
-      {
-        "choiceid": 13,
-        "option": "You think we can move more people with public transit and don't want to fund free parking.",
+    "question": {
+      "text": "Your friend purchased a brand new 1955 Chevy Bel Air and wants to be sure they can park it for free anywhere in the city. They ask for your help bringing this plan to life. What do you tell city council?",
+      "image": "q4_bicycle_1.png",
+      "options": [{
+        "choiceid": 12,
+        "option": "You don't believe in the city subsidizing free parking. Let the market decide how much parking is built.",
         "densityEffect": 1,
         "infrastractureEffect": 1
-      },
-      {
-        "choiceid": 14,
-        "option": "You have a nice car too and love the idea.  We need as much parking as possible to prevent crowded streets!",
-        "densityEffect": -1,
-        "infrastractureEffect": -1
-      }
-    ]
+        },
+        {
+          "choiceid": 13,
+          "option": "You think we can move more people with public transit and don't want to fund free parking.",
+          "densityEffect": 1,
+          "infrastractureEffect": 1
+        },
+        {
+          "choiceid": 14,
+          "option": "You have a nice car too and love the idea. We need as much parking as possible to prevent crowded streets!",
+          "densityEffect": -1,
+          "infrastractureEffect": -1
+        }
+      ]
+    },
+    "event": "The city decides to implement \"First Fridays\" where the first Friday of the month is dedicated to local art galleries and musicians, an event for the whole family",
+    "fact": "Transportation planners point out that parking minimums increase the distance between destinations, making cities and towns less walkable, thereby perpetuating a cycle of less viable transit and mobility options, the need for more driving, and—subsequently—even more parking."
   },
   {
     "id": 5,
-    "question": "What do you choose5?",
-    "image": "q5_people_1.png",
-    "options": [{
-      "option": "some choice"
+    "question": {
+      "text": "A developer wants to build 50 apartments on an empty lot with 50% of units dedicated to homeless veterans. They didn't do an extensive environment review though... What do you want your city council friends to do?",
+      "image": "q5_people_1.png",
+      "options": [{
+        "choiceid": 15,
+        "option": "50 apartments? That will be loud and cause more traffic. Get them to oppose it with any means necessary.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 16,
+          "option": "Environmental reviews must ALWAYS be done. This developer should be sued.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 17,
+          "option": "Hmm... it was already an empty lot. I'd rather they just build the housing. Get it expedited!",
+          "densityEffect": 1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceid": 18,
+          "option": "I'd rather stay out of this, they can do whatever they want since it's not on my property.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        }
+      ]
     },
-    {
-      "option": "some choice"
-    }
-  ]
+    "event": "The Federal government distributes funds to build housing for homeless veterans",
+    "fact": "Environmental studies are often used to prevent new housing from being built in cities, and often causes environment destruction outside of cities. In LA, a local nonprofit developer proposed several years ago to build a 49-unit apartment building on the lot—with 24 homes set aside for disabled veterans experiencing homelessness—it was slammed with an environmental lawsuit. A single angry neighbor was able to delay the project, thanks to a piece of legislation known as the California Environmental Quality Act. Although a 189-page assessment found that all possible environmental effects could be mitigated, the suit demanded that planners spend years conducting additional environmental research. The site—covered in cracked concrete and lined with a barbed-wire-topped chain-link fence—remains empty to this day."
   },
+
+
   {
     "id": 6,
     "question": "What do you choose6?",
