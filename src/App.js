@@ -21,13 +21,13 @@ const endInfo = {
     'name': 'Low Density and High Infrastructure',
     'badge': '🏠',
     'text': 'end 2',
-    'image': 'desert.png'
+    'image': 'caronroad.png'
   },
   'highDensityLowInfrastructure': {
     'name': 'High Density and Low Infrastructure',
     'badge': '🚗',
     'text': 'end 3',
-    'image': 'highrises.png'
+    'image': 'apartments.png'
   },
   'lowDensityLowInfrastructure': {
     'name': 'Low Density and Low Infrastructure',
