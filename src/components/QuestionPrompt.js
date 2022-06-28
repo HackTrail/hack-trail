@@ -7,8 +7,8 @@ import './QuestionPrompt.css';
 
 const QuestionPrompt = (props) => {
     return (
-        <div className="questionPrompt">
-            <ImageContainer image={props.image}/>
+        <div className="questionPrompt wrapper">
+            <ImageContainer image={image}/>
             <Question nextQuestion={props.nextQuestion} question={props.question} options={props.options}/>
         </div>
     );

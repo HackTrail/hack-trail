@@ -1,6 +1,9 @@
 import './App.css';
+
 import QuestionPrompt from './components/QuestionPrompt';
 import { useState } from 'react';
+import Start from './components/Start';
+import startImage from './images/start_screen.png';
 
 function App() {
   const [isInStart, setisInStart] = useState(true);
@@ -19,13 +22,9 @@ function App() {
   return (
     <div>
         {isInStart ? (
-          <div >
-            <h1>McMuffy's World</h1>
-                <button onClick={startGame}>Start</button>
-          </div>
+          <Start image={startImage} questions={questions} />
         ) : <div/>}
         {answered>=0 && answered<3 ? (
-          // pass in all questions, then re-render onclicks
             <QuestionPrompt nextQuestion={nextQuestion} key={questions[answered].id} question={questions[answered].question} image={questions[answered].image} options={questions[answered].options} />
         ) : <div/>}
         {answered===3 ? (
@@ -36,9 +35,6 @@ function App() {
         ): <div/>}
     </div>
 );
-    // questions.map((questionPrompt) => {
-    //   return <QuestionPrompt key={questionPrompt.id} question={questionPrompt.question} image={questionPrompt.image} options={questionPrompt.options} />
-    // })
 }
 
 export default App;
