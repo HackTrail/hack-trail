@@ -2,7 +2,7 @@
     {
       "id": 1,
       "question": "What do you choose?",
-      "image": "url-link/relative-link-in-assets",
+      "image": "house_without_sun_grass.png",
       "options": [{
         "option": "Choose and move to 2",
         "nextId": 2
