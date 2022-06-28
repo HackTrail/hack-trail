@@ -1,5 +1,5 @@
 import { db } from './firebase';
-import { doc, getDoc, updateDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
 
 export const getOutcomeTally = async (outcomeId) => {
@@ -11,16 +11,26 @@ export const getOutcomeTally = async (outcomeId) => {
     }
 };
 
+const setOutcome = async (outcomeId) => {
+    let outcomeRef = doc(db, 'results', outcomeId)
+    await setDoc(outcomeRef, {})
+}
+
 export const incrementOutcomeTally = async (outcomeId) => {
     const outcomeRef = doc(db, "results", outcomeId);
-    const outcomeSnapshot = await getDoc(outcomeRef);
+    let outcomeSnapshot = await getDoc(outcomeRef);
+
     if (!outcomeSnapshot.exists()) {
-        console.log("Outcome doesn't exist");
-        return;
+        await setOutcome(outcomeId);
+        outcomeSnapshot = await getDoc(outcomeRef);
     }
 
     let currValue = outcomeSnapshot.data()['value'];
-    currValue++;
+    if (!currValue) {
+        currValue = 1;
+    } else {
+        currValue++;
+    }
 
     await updateDoc(outcomeRef, {
         value: currValue
@@ -50,15 +60,27 @@ export const getQuestionAnswerTally = async (questionId, answerId) => {
     }
 }
 
-export const incrementQuestionAnswerTally = async (questionId, answerId) => {
-    const [questionRef, questionSnapshot] = await questionRefAndSnapshot(questionId);
+export async function setQuestion(questionId) {
+    let questionRef = doc(db, 'questions', questionId)
+    await setDoc(questionRef, {})
+}
 
-    if (questionSnapshot.exists()) {
-        let currValue = questionSnapshot.data()[answerId];
-        currValue++;
-        await updateDoc(questionRef, {[answerId]: currValue})
-        return currValue
-    } else {
-        console.log("Question doesn't exist");
+export const incrementQuestionAnswerTally = async (questionId, answerId) => {
+    let [questionRef, questionSnapshot] = await questionRefAndSnapshot(questionId);
+
+    if (!questionSnapshot.exists()) {
+        await setQuestion(questionId);
+        [questionRef, questionSnapshot] = await questionRefAndSnapshot(questionId);
     }
+
+    let currValue = questionSnapshot.data()[answerId];
+    if (!currValue) {
+        currValue = 1;
+    } else {
+        currValue++;
+    }
+
+    await updateDoc(questionRef, {[answerId]: currValue});
+
+    return currValue
 }
