@@ -3,11 +3,39 @@ import './App.css';
 import { useState } from 'react';
 
 import QuestionPrompt from './components/QuestionPrompt';
+import End from './components/End';
 import Start from './components/Start';
 import Info from './components/Info';
 
 import startImage from './images/start_screen.png';
-import { clearChoicesRecord } from "./utils/utils";
+import { clearChoicesRecord, recordBadge } from "./utils/utils";
+
+const endInfo = {
+  'highDensityHighInfrastructure': {
+    'name': 'High Density and High Infrastructure',
+    'badge': '🏙️',
+    'text': 'end 1',
+    'image': 'highrises.png'
+  },
+  'lowDensityHighInfrastructure': {
+    'name': 'Low Density and High Infrastructure',
+    'badge': '🏠',
+    'text': 'end 2',
+    'image': 'caronroad.png'
+  },
+  'highDensityLowInfrastructure': {
+    'name': 'High Density and Low Infrastructure',
+    'badge': '🚗',
+    'text': 'end 3',
+    'image': 'apartments.png'
+  },
+  'lowDensityLowInfrastructure': {
+    'name': 'Low Density and Low Infrastructure',
+    'badge': '🏜️',
+    'text': 'end 4',
+    'image': 'desert.png'
+  }
+}
 
 function App() {
   const [isInStart, setIsInStart] = useState(true);
@@ -36,6 +64,22 @@ function App() {
     setInfrastructureScore(infrastructureScore+infrastructureEffect)
   }
 
+  const getEnding = () => {
+    let data = {}
+    if (densityScore >= 4 && infrastructureScore >= 1) {
+      data = endInfo['highDensityHighInfrastructure']
+    } else if (densityScore >= 4) {
+      data = endInfo['highDensityLowInfrastructure']
+    } else if (infrastructureScore >= 1) {
+      data = endInfo['lowDensityHighInfrastructure']
+    } else {
+      data = endInfo['lowDensityLowInfrastructure']
+    }
+  
+    recordBadge(data.badge)
+    return data
+  }
+
   const questions = require('./components/data/questionsData.json')
   const numQuestions = Object.keys(questions).length
 
@@ -50,11 +94,7 @@ function App() {
         return <QuestionPrompt nextInfo={nextInfo} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       else {
-        return <div>
-          <h1>McMuffy's World</h1>
-              ggwp <br></br>
-              density: {densityScore}, infrastructure: {infrastructureScore}
-        </div>;
+        return <End data={getEnding()} />
       }
     }
 
