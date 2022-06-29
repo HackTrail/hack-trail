@@ -16,4 +16,4 @@ const Results = ({data}) => {
     )
 }
 
-export default Result
+export default Results
