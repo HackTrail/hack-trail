@@ -7,6 +7,7 @@
 }
 
 .option {
+    text-align: left;
     display: block;
     border: none;
     background-color: #FFFFFF;
