@@ -46,6 +46,8 @@ export function recordBadge(badge) {
     if (!badges) {
         badges = []
     }
-    badges.push(badge)
+    if (badge in badges === false) {
+        badges.push(badge)
+    }
     setBadgesRecord(badges)
 }
