@@ -20,7 +20,7 @@ const Question = (props) => {
             <div className="options">
                 {
                     props.options.map((each, index) => {
-                        return (<button className="option" key={uuidv4()} id={each.choiceId} onClick={scoreAndContinue}>
+                        return (<button className="option small-font" key={uuidv4()} id={each.choiceId} onClick={scoreAndContinue}>
                                 {index+1 + ". " + each.option}
                             </button>)
                     })
