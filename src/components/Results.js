@@ -3,7 +3,7 @@ import Badges from "./Badges"
 import getQuestionAnswerTally from "../db/firestore"
 
 
-const Result = ({props}) => {
+const Results = ({data}) => {
     const getQuestionAnsTally = (e) => {
         const tally = getQuestionAnswerTally(1)
     }
@@ -12,7 +12,7 @@ const Result = ({props}) => {
         <div>
             <div>Result is {tally}
             </div>
-            <Badges props={props}/>
+            <Badges props={data}/>
         </div>
     )
 }
