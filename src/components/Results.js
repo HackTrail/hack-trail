@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Badges from "./Badges"
 import { getQuestionAnswerTally } from '../db/firestore'
 
 const Results = ({questions, resetGame}) => {
+    const [mappings, setMappings] = useState([])
+
     const getTallies = async () => {
         let tallies = []
         for (const question of questions) {
@@ -19,15 +21,12 @@ const Results = ({questions, resetGame}) => {
             tallies[index].push(dict)
         }
 
-        console.log(tallies)
         return tallies
       }
 
-
-    const getDataMapping = async () => {
+    const getDataMappings = async () => {
         let list = []
         let tallies = await getTallies()
-        console.log(tallies)
         questions.forEach(question => {
             const talliesForQuestion = tallies[question.id]
             const questionMapping = {
@@ -35,7 +34,6 @@ const Results = ({questions, resetGame}) => {
                 'choices': [
                     question.question.options.map(option => {
                         const id = option.choiceId
-                        console.log(talliesForQuestion[0][id])
                         return {
                             "text": option.option,
                             "tallies": talliesForQuestion[0][id]
@@ -45,15 +43,27 @@ const Results = ({questions, resetGame}) => {
             }
             list.push(questionMapping)
         })
-        console.log(list)
         return list
     }
 
-    getDataMapping()
+    useEffect(() => {
+        (async () => {
+          const data = await getDataMappings();
+          setMappings(data);
+          console.log(mappings)
+        })();
+      }, []);
 
     return (
         <div className="wrapper">
             <h2>What did others choose?</h2>
+            <div>
+                {
+                    mappings.map((mapping) => {
+                        return (<p>{mapping["text"]}</p>)
+                    })
+                }
+            </div>
             <Badges />
             <button onClick={resetGame}>Replay?</button>
         </div>
