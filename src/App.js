@@ -50,9 +50,20 @@ function App() {
 
 
   const startGame = () => {
-    clearChoicesRecord()
+    clearChoicesRecord();
     setIsInStart(false);
-    setQuestionsSeen(questionsSeen+1)
+    setQuestionsSeen(questionsSeen+1);
+  }
+
+  const resetGame = () => {
+    setIsInStart(true);
+    setQuestionsSeen(-1);
+    setIsInInfo(false);
+    setDensityScore(0);
+    setInfrastructureScore(0);
+    setInEvent(false);
+    setSelectedChoice(-1);
+    setIsInResults(false);
   }
 
   const nextQuestion = () => {
@@ -117,7 +128,7 @@ function App() {
         return <QuestionPrompt nextEvent={nextEvent} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       if (isInResults) {
-        return <Results/>
+        return <Results resetGame={resetGame} />
       }
       else {
         return <End data={getEnding()} getResults={getResults}/>
