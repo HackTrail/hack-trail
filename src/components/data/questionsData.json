@@ -161,7 +161,7 @@
     "id": 6,
     "question": {
       "text": "Earthquake!The main highway by the waterfront has collapsed. What should the city do?",
-      "image": "q6_earthquake_1.png",
+      "image": "q6_earthquake.png",
       "options": [{
         "choiceId": 1,
         "option": "Highways are important infrastructure for a city, especially for people who live in the suburbs.  Rebuild it at any cost.",
