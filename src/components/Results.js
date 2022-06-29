@@ -2,15 +2,16 @@ import React from "react"
 import Badges from "./Badges"
 
 
-const Results = () => {
+const Results = ({resetGame}) => {
 
     // const tally = getQuestionAnswerTally(1)
 
     return (
-        <div>
+        <div className="wrapper">
             {/*<div>Result is {tally}*/}
             {/*</div>*/}
             <Badges />
+            <button onClick={resetGame}>Replay?</button>
         </div>
     )
 }
