@@ -10,6 +10,7 @@ import Event from './components/Event';
 import Results from './components/Results';
 import startImage from './images/start_screen.png';
 import { clearChoicesRecord, recordBadge } from "./utils/utils";
+import {incrementOutcomeTally} from "./db/firestore";
 
 const endInfo = {
   'highDensityHighInfrastructure': {
@@ -93,13 +94,17 @@ function App() {
   const getEnding = () => {
     let data = {}
     if (densityScore >= 4 && infrastructureScore >= 1) {
-      data = endInfo['highDensityHighInfrastructure']
+      data = endInfo['highDensityHighInfrastructure'];
+      incrementOutcomeTally('high-density-high-infrastructure');
     } else if (densityScore >= 4) {
-      data = endInfo['highDensityLowInfrastructure']
+      data = endInfo['highDensityLowInfrastructure'];
+      incrementOutcomeTally('high-density-low-infrastructure');
     } else if (infrastructureScore >= 1) {
-      data = endInfo['lowDensityHighInfrastructure']
+      data = endInfo['lowDensityHighInfrastructure'];
+      incrementOutcomeTally('low-density-high-infrastructure');
     } else {
-      data = endInfo['lowDensityLowInfrastructure']
+      data = endInfo['lowDensityLowInfrastructure'];
+      incrementOutcomeTally('low-density-low-infrastructure');
     }
   
     recordBadge(data.badge)
