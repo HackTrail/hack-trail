@@ -14,25 +14,25 @@ const endInfo = {
   'highDensityHighInfrastructure': {
     'name': 'High Density and High Infrastructure',
     'badge': '🏙️',
-    'text': 'end 1',
+    'text': 'In your old age, you are grateful you can walk to get your groceries and take the bus to your doctor appointments without relying on cars.  Your children were able to find affordable housing nearby. You are excited for the coming weekend - you are taking your grandchild on the trolley to the pier and will visit the aquarium and get the best ice cream in the city!',
     'image': 'highrises.png'
   },
   'lowDensityHighInfrastructure': {
     'name': 'Low Density and High Infrastructure',
     'badge': '🏠',
-    'text': 'end 2',
+    'text': 'Your city keeps raising taxes in order to maintain all the public transit it has invested in.  You live far from the station and it is difficult for you to get there.  As an elderly person, you feel stuck at home and wish you could take one of those trains to visit your children who live a few states away.  They were not able to find housing nearby and you miss them.',
     'image': 'caronroad.png'
   },
   'highDensityLowInfrastructure': {
     'name': 'High Density and Low Infrastructure',
     'badge': '🚗',
-    'text': 'end 3',
+    'text': 'In your old age, you moved into a condo and are grateful that your upstairs neighbor has taken an interest in you and frequently brings you meals when they make too much food.  You love going for morning walks, but whenever you need to visit across town you have to rely on someone to pick you up.  Your children come over every Sunday for waffles and then you take your grandchildren to the park.',
     'image': 'apartments.png'
   },
   'lowDensityLowInfrastructure': {
     'name': 'Low Density and Low Infrastructure',
     'badge': '🏜️',
-    'text': 'end 4',
+    'text': 'Your children moved away after school, and visit a couple times a year.  The road near your house continues to be expanded and it is not pleasant for you to take walks, your doctor told you that you can no longer drive.  You feel lonely and wish people would visit more often.',
     'image': 'desert.png'
   }
 }
