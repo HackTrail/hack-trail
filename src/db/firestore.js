@@ -52,12 +52,14 @@ async function questionRefAndSnapshot(questionId) {
 export const getQuestionAnswerTally = async (questionId, answerId) => {
     const [, questionSnapshot] = await questionRefAndSnapshot(questionId);
     if (questionSnapshot.exists()) {
-        const data = questionSnapshot.data()
-        let totalAnswers = 0;
-        Object.keys(data).forEach(function(key,) {
-            totalAnswers += data[key]
-        })
-        return [questionSnapshot.data()[answerId], totalAnswers];
+        let result = 0;
+        try {
+            result = questionSnapshot.data()[answerId]
+        } catch (error) {
+            console.error(error)
+        }
+
+        return result;
     } else {
         console.log("Question doesn't exist");
     }
