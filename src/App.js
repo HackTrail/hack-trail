@@ -42,9 +42,9 @@ function App() {
   const [isInStart, setIsInStart] = useState(true);
   const [questionsSeen, setQuestionsSeen] = useState(-1);
   const [isInInfo, setIsInInfo] = useState(false);
+  const [isInResults, setIsInResults] = useState(false);
   const [densityScore, setDensityScore] = useState(0);
   const [infrastructureScore, setInfrastructureScore] = useState(0);
-  const [isInResults, setIsInResults] = useState(false);
 
   const startGame = () => {
     clearChoicesRecord()
@@ -64,6 +64,10 @@ function App() {
   const updateScores = (densityEffect, infrastructureEffect) => {
     setDensityScore(densityScore+densityEffect)
     setInfrastructureScore(infrastructureScore+infrastructureEffect)
+  }
+
+  const showResults = () => {
+    setIsInResults(true);
   }
 
   const getEnding = () => {
@@ -104,7 +108,7 @@ function App() {
           return <Results data={getResults()}/>
       }
       else {
-        return <End data={getEnding()} />
+        return <End data={getEnding()} showResults={showResults} />
       }
     }
 
