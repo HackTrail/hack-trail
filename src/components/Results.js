@@ -52,6 +52,7 @@ const Results = ({questions, resetGame}) => {
           setMappings(data);
           console.log(mappings)
         })();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
     return (
