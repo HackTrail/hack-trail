@@ -7,7 +7,6 @@ import End from './components/End';
 import Start from './components/Start';
 import Info from './components/Info';
 import Event from './components/Event';
-import Results from './components/Result';
 import Results from './components/Results';
 import startImage from './images/start_screen.png';
 import { clearChoicesRecord, recordBadge } from "./utils/utils";
