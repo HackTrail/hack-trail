@@ -27,3 +27,27 @@ export function recordChoice(questionId, choiceId) {
 
     incrementQuestionAnswerTally(`${questionId}`, `${choiceId}`)
 }
+
+export function getBadgesRecord(){
+    let badges = localStorage.getItem('badges');
+    if (badges) {
+	    return JSON.parse(badges);
+    } else {
+	    return null;
+    }
+}
+
+function setBadgesRecord(badges) {
+    localStorage.setItem('badges', JSON.stringify(badges));
+}
+
+export function recordBadge(badge) {
+    let badges = getBadgesRecord();
+    if (!badges) {
+        badges = []
+    }
+    if (badge in badges === false) {
+        badges.push(badge)
+    }
+    setBadgesRecord(badges)
+}

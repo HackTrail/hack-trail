@@ -3,7 +3,7 @@
     "id": 1,
     "question": {
       "text": "You hear about a new business coming to town and you don't approve of the new owners. What do you want to tell the politicians and neighbors?",
-      "image": "q1_house_1.png",
+      "image": "q1_ballot.png",
       "options": [{
         "choiceId": 1,
         "option": "This makes me uncomfortable, I vote for single family zoning.",
@@ -31,7 +31,7 @@
     "id": 2,
     "question": { 
       "text": "Single Family Zoning is being argued in the Supreme Court. Luckily you know a few of the Justices and they will listen to your opinion. What do you want to tell them?",
-      "image": "q2_trees_2.png",
+      "image": "q2_house.png",
       "options": [{
         "choiceId": 1,
         "option": "The reasons people live in different types of housing is economic, this zoning segregates people and exclusionary zoning should be struck down.",
@@ -65,7 +65,7 @@
     "id": 3,
     "question":{
       "text": "Your coworker bought a plot of land in your neighborhood. They want to split it into two and build four tiny homes - one to live in and 3 to rent out. They are complaining to you that the city won't let them because there is a minimum lot size that a house can be in the region. He asked if you could influence city council to lower the size to allow for a tiny home. What do you want to do?",
-      "image": "q3_earthquake_1.png",
+      "image": "q3_law.png",
       "options": [{
         "choiceId": 1,
         "option": "Tiny homes are neat, why not? Advocate to get minimum lot size significantly lowered.",
@@ -99,7 +99,7 @@
     "id": 4,
     "question": {
       "text": "Your friend purchased a brand new 1955 Chevy Bel Air and wants to be sure they can park it for free anywhere in the city. They ask for your help bringing this plan to life. What do you tell city council?",
-      "image": "q4_bicycle_1.png",
+      "image": "q4_bicycle.png",
       "options": [{
         "choiceId": 1,
         "option": "You don't believe in the city subsidizing free parking. Let the market decide how much parking is built.",
@@ -127,7 +127,7 @@
     "id": 5,
     "question": {
       "text": "A developer wants to build 50 apartments on an empty lot with 50% of units dedicated to homeless veterans. They didn't do an extensive environment review though... What do you want your city council friends to do?",
-      "image": "q5_people_1.png",
+      "image": "q5_trees.png",
       "options": [{
         "choiceId": 1,
         "option": "50 apartments? That will be loud and cause more traffic. Get them to oppose it with any means necessary.",
@@ -161,7 +161,7 @@
     "id": 6,
     "question": {
       "text": "Earthquake!The main highway by the waterfront has collapsed. What should the city do?",
-      "image": "q6_law_1.png",
+      "image": "q6_earthquake_1.png",
       "options": [{
         "choiceId": 1,
         "option": "Highways are important infrastructure for a city, especially for people who live in the suburbs.  Rebuild it at any cost.",
@@ -189,7 +189,7 @@
     "id": 7,
     "question": {
       "text": "Your city is experiencing a tragic epidemic of children being killed by cars when playing in the street. What should the city do?",
-      "image": "q6_law_1.png",
+      "image": "q7_child.png",
       "options": [{
         "choiceId": 1,
         "option": "Create a media campaign targeted  at parents shaming them for allowing  their children to play in the street. It's dangerous!",
@@ -217,7 +217,7 @@
     "id": 8,
     "question": {
       "text": "Your neighbor posts on Nextdoor about how they're concerned your neighborhood doesn't have much racial and socioeconomic diversity. They ask what the neighborhood could do to change this?",
-      "image": "q6_law_1.png",
+      "image": "q8_people.png",
       "options": [{
         "choiceId": 1,
         "option": "Sadly, people tend to prefer living near people like them. We should allow them to make their own choices naturally and not force anything.",
@@ -245,7 +245,7 @@
     "id": 9,
     "question": {
       "text": "A developer wants to build 3bd/3bath rowhomes on a lot in your neighborhood, but the current laws require 5ft of space between houses. They ask you if you can advocate for changing this rule for them. What do you do?",
-      "image": "q6_law_1.png",
+      "image": "q9_rowhomes.png",
       "options": [{
         "choiceId": 1,
         "option": "Rowhomes seem dangerous and noisy, especially in the case of a fire happening. Tell him sadly you cannot help get this project approved.",

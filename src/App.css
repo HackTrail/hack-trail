@@ -60,3 +60,11 @@ button:hover {
   margin-right: auto;
   width: 50%;
 }
+
+.box-yellow-bg {
+  border: 3px solid #555555;
+  border-radius: 8px;
+  background-color: #EABF26;
+  margin: 30px;
+  padding: 20px;
+}
