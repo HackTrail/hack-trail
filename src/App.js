@@ -15,25 +15,25 @@ const endInfo = {
   'highDensityHighInfrastructure': {
     'name': 'High Density and High Infrastructure',
     'badge': '🏙️',
-    'text': 'As you get older, you are grateful that you can walk to the grocery store and take the bus to your doctor appointments without needing a car.  Local affordable housing means your kids now live nearby. You are excited for the coming weekend when you will take your grandchild by trolley to the pier to visit the aquarium and get the best ice cream in the city!',
+    'text': 'As you age, you are grateful that you can walk to the grocery store and take the bus to your doctor appointments without needing a car.  Local affordable housing means your kids now live nearby. You are excited for the coming weekend when you will take your grandchild by trolley to the pier to visit the aquarium and get the best ice cream in the city!',
     'image': 'highrises.png'
   },
   'lowDensityHighInfrastructure': {
     'name': 'Low Density and High Infrastructure',
     'badge': '🏠',
-    'text': 'Your city keeps raising taxes in order to maintain all the public transit it has invested in.  You live far from the station and it is difficult for you to get there.  As an elderly person, you feel stuck at home and wish you could take one of those trains to visit your children who live a few states away.  They were not able to find housing nearby and you miss them.',
+    'text': 'Your city keeps raising taxes to maintain all the public transit it has invested in.  You live far from the station and it is difficult for you to get there as you can no longer drive.  You feel stuck at home and wish you could take one of those trains to visit your children who live a few states away.  They were not able to find housing nearby due to high cost of housing, and you miss them.',
     'image': 'caronroad.png'
   },
   'highDensityLowInfrastructure': {
     'name': 'High Density and Low Infrastructure',
     'badge': '🚗',
-    'text': 'In your old age, you moved into a condo and are grateful that your upstairs neighbor has taken an interest in you and frequently brings you meals when they make too much food.  You love going for morning walks, but whenever you need to visit across town you have to rely on someone to pick you up.  Your children come over every Sunday for waffles and then you take your grandchildren to the park.',
+    'text': 'During retirement, you downsized to a condo and are grateful that your upstairs neighbor has taken an interest in you, frequently bringing you meals when they cook too much food.  You love going for morning walks, but getting around town means finding a ride due to lack of public transportation.  Most Sundays your children bring the grandkids over for waffles and a trip to the park.',
     'image': 'apartments.png'
   },
   'lowDensityLowInfrastructure': {
     'name': 'Low Density and Low Infrastructure',
     'badge': '🏜️',
-    'text': 'Your children moved away after school, and visit a couple times a year.  The road near your house continues to be expanded and it is not pleasant for you to take walks, your doctor told you that you can no longer drive.  You feel lonely and wish people would visit more often.',
+    'text': 'As adults, you kids moved away, but visit a couple of times a year.  The road near your house continues to be expanded, and sidewalks were removed to make way for more cars. You can no longer even take walks in your neighborhood. Health problems make it impossible for you to drive. You feel lonely and wish family and friends would visit more often.',
     'image': 'desert.png'
   }
 }
