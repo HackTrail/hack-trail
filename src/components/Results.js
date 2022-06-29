@@ -13,7 +13,7 @@ const Results = ({questions, resetGame}) => {
             for (const option of question.question.options) {
                 const tallyRes = await getQuestionAnswerTally(String(question.id), String(option.choiceId))
                 const keyVal = option.choiceId
-                dict[String(keyVal + "test")] = tallyRes
+                dict[keyVal] = tallyRes
             }
 
             tallies[index].push(dict)
@@ -35,10 +35,10 @@ const Results = ({questions, resetGame}) => {
                 'choices': [
                     question.question.options.map(option => {
                         const id = option.choiceId
-                        console.log(talliesForQuestion['1test'])
+                        console.log(talliesForQuestion[0][id])
                         return {
                             "text": option.option,
-                            "tallies": talliesForQuestion
+                            "tallies": talliesForQuestion[0][id]
                         }
                     })
                 ]
