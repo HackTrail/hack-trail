@@ -2,7 +2,7 @@ import React from "react"
 
 const ImageContainer = ({className, image}) => {
     return (
-        <img src={image} alt="dummy-alt-text" className={className}></img>
+        <img rel="preload" src={image} alt="dummy-alt-text" className={className}></img>
     )
 }
 
