@@ -6,6 +6,7 @@ import QuestionPrompt from './components/QuestionPrompt';
 import End from './components/End';
 import Start from './components/Start';
 import Info from './components/Info';
+import Results from './components/Result'
 
 import startImage from './images/start_screen.png';
 import { clearChoicesRecord, recordBadge } from "./utils/utils";
@@ -43,6 +44,7 @@ function App() {
   const [isInInfo, setIsInInfo] = useState(false);
   const [densityScore, setDensityScore] = useState(0);
   const [infrastructureScore, setInfrastructureScore] = useState(0);
+  const [isInResults, setIsInResults] = useState(false);
 
   const startGame = () => {
     clearChoicesRecord()
@@ -80,6 +82,11 @@ function App() {
     return data
   }
 
+  const getResults = () => {
+      setIsInResults(true)
+  }
+
+
   const questions = require('./components/data/questionsData.json')
   const numQuestions = Object.keys(questions).length
 
@@ -92,6 +99,9 @@ function App() {
       }
       if (questionsSeen < numQuestions) { 
         return <QuestionPrompt nextInfo={nextInfo} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
+      }
+      if (isInResults) {
+          return <Results data={getResults()}/>
       }
       else {
         return <End data={getEnding()} />
