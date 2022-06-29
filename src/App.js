@@ -75,6 +75,10 @@ function App() {
   setInEvent(true);
  }
 
+ const getResults = () => {
+      setIsInResults(true)
+  }
+  
   const getEnding = () => {
     let data = {}
     if (densityScore >= 4 && infrastructureScore >= 1) {
@@ -90,11 +94,6 @@ function App() {
     recordBadge(data.badge)
     return data
   }
-
-  const getResults = () => {
-      setIsInResults(true)
-  }
-
 
   const questions = require('./components/data/questionsData.json')
   const numQuestions = Object.keys(questions).length
@@ -118,10 +117,10 @@ function App() {
         return <QuestionPrompt nextEvent={nextEvent} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       if (isInResults) {
-          return <Results data={getResults()}/>
+        return <Results/>
       }
       else {
-        return <End data={getEnding()} />
+        return <End data={getEnding()} getResults={getResults}/>
       }
     }
 
