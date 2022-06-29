@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.badgeRow {
+    justify-content: space-around;
+}
+
+.badgeDisplayCase {
+    border: 3px solid #555555;
+    border-radius: 8px;
+    background-color: #F3F3F3;
+    margin: 30px 60px;
+    padding: 20px;
+    font-size: 52px;
+}
