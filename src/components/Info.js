@@ -6,7 +6,7 @@ const Info = ({nextQuestion, text}) => {
     return (
         <div className="wrapper">
             <h2>Did you know?</h2>
-            <p>{text}</p>
+            <p className="small-font">{text}</p>
             <ImageContainer image={startImage}/>
             <div className="centered-button-wrapper">
                 <button onClick={nextQuestion}>Next</button>

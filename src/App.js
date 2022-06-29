@@ -15,7 +15,7 @@ const endInfo = {
   'highDensityHighInfrastructure': {
     'name': 'High Density and High Infrastructure',
     'badge': '🏙️',
-    'text': 'In your old age, you are grateful you can walk to get your groceries and take the bus to your doctor appointments without relying on cars.  Your children were able to find affordable housing nearby. You are excited for the coming weekend - you are taking your grandchild on the trolley to the pier and will visit the aquarium and get the best ice cream in the city!',
+    'text': 'As you get older, you are grateful that you can walk to the grocery store and take the bus to your doctor appointments without needing a car.  Local affordable housing means your kids now live nearby. You are excited for the coming weekend when you will take your grandchild by trolley to the pier to visit the aquarium and get the best ice cream in the city!',
     'image': 'highrises.png'
   },
   'lowDensityHighInfrastructure': {

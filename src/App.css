@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+} 
+
+body {
+  padding: 0;
+  border: 0;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #555555;
+}
+
 * {
   font-family: 'VT323', monospace;
 }
@@ -7,10 +21,10 @@
 h1 {
   font-size: 120px;
   text-align: center;
-  color: #F3F3F3;
+  color: #C82B2B;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 0 3px black;
+  text-shadow: 0 6px #555555;
 }
 
 h2 {
@@ -21,10 +35,19 @@ h2 {
 
 p, div {
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
   color: #555555;
 }
 
+img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 
 button {
   font-size: 36px;
@@ -45,9 +68,11 @@ button:hover {
 }
 
 .wrapper {
-  max-width: 1280px;
-  margin: auto;
+  background-color: #FFFFFF;
+  max-width: 1000px;
+  margin: 40px;
   padding: 40px;
+  border-radius: 6px;
 }
 
 .centered-button-wrapper {
@@ -67,4 +92,22 @@ button:hover {
   background-color: #EABF26;
   margin: 30px;
   padding: 20px;
+}
+
+.small-font {
+  font-size: 28px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
