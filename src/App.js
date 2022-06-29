@@ -6,6 +6,7 @@ import QuestionPrompt from './components/QuestionPrompt';
 import End from './components/End';
 import Start from './components/Start';
 import Info from './components/Info';
+import Event from './components/Event';
 
 import startImage from './images/start_screen.png';
 import { clearChoicesRecord, recordBadge } from "./utils/utils";
@@ -59,6 +60,7 @@ function App() {
   }
 
   const nextInfo = () => {
+    setInEvent(false);
     setIsInInfo(true);
   }
 
@@ -71,6 +73,7 @@ function App() {
   setSelectedChoice(choiceId);
   setInEvent(true);
  }
+
   const getEnding = () => {
     let data = {}
     if (densityScore >= 4 && infrastructureScore >= 1) {
@@ -91,11 +94,7 @@ function App() {
   const numQuestions = Object.keys(questions).length
 
   const getConsequence = (choiceId) => {
-    questions[questionsSeen].options.map((option) => {
-      if (option.choiceId === choiceId) {
-        return option.consequence;
-      }
-    })
+    return questions[questionsSeen].question.options[choiceId].consequence
   }
 
   const game = () => {
@@ -103,8 +102,8 @@ function App() {
         return <Start startGame={startGame} image={startImage} questions={questions} />;
       }
       if(isInEvent) {
-        const consequence = getConsequence(selectedChoice);
-        return <Event nextInfo={nextInfo} event={questions[questionsSeen].event} consequence={consequence} />;
+        const consequence = getConsequence(selectedChoice)
+        return <Event nextInfo={nextInfo} image={questions[questionsSeen].question.image} event={questions[questionsSeen].event} consequence={consequence} />;
       }
       if (isInInfo) {   
         return <Info nextQuestion={nextQuestion} text={questions[questionsSeen].fact} />;

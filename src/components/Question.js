@@ -10,6 +10,9 @@ const Question = (props) => {
         const densityEffect = props.options[choiceIndex].densityEffect
         const infrastructureEffect = props.options[choiceIndex].infrastructureEffect
         props.updateScores(densityEffect, infrastructureEffect)
+
+        props.nextEvent(e.target.id);
+
     }
 
     return (
@@ -18,7 +21,7 @@ const Question = (props) => {
             <div className="options">
                 {
                     props.options.map((each, index) => {
-                        return (<button className="option" key={uuidv4()} id={each.choiceId} onClick={() => { scoreAndContinue(); props.nextEvent(each.choiceId()); }}>
+                        return (<button className="option" key={uuidv4()} id={each.choiceId} onClick={scoreAndContinue}>
                                 {index+1 + ". " + each.option}
                             </button>)
                     })
