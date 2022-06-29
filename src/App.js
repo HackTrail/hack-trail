@@ -15,6 +15,9 @@ function App() {
   const [isInInfo, setIsInInfo] = useState(false);
   const [densityScore, setDensityScore] = useState(0);
   const [infrastructureScore, setInfrastructureScore] = useState(0);
+  const [isInEvent, setInEvent] = useState(false);
+  const [selectedChoice, setSelectedChoice] = useState(-1);
+
 
   const startGame = () => {
     clearChoicesRecord()
@@ -36,18 +39,35 @@ function App() {
     setInfrastructureScore(infrastructureScore+infrastructureEffect)
   }
 
+ const nextEvent = (choiceId) => {
+  setSelectedChoice(choiceId);
+  setInEvent(true);
+ }
+
   const questions = require('./components/data/questionsData.json')
   const numQuestions = Object.keys(questions).length
+
+  const getConsequence = (choiceId) => {
+    questions[questionsSeen].options.map((option) => {
+      if (option.choiceId === choiceId) {
+        return option.consequence;
+      }
+    })
+  }
 
   const game = () => {
       if (isInStart) {   
         return <Start startGame={startGame} image={startImage} questions={questions} />;
       }
+      if(isInEvent) {
+        const consequence = getConsequence(selectedChoice);
+        return <Event nextInfo={nextInfo} event={questions[questionsSeen].event} consequence={consequence} />;
+      }
       if (isInInfo) {   
         return <Info nextQuestion={nextQuestion} text={questions[questionsSeen].fact} />;
       }
       if (questionsSeen < numQuestions) { 
-        return <QuestionPrompt nextInfo={nextInfo} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
+        return <QuestionPrompt nextEvent={nextEvent} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       else {
         return <div>

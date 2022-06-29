@@ -8,13 +8,15 @@
           "choiceId": 1,
           "option": "Choose and move to 2",
           "densityEffect": 1,
-          "infrastructureEffect": 1
+          "infrastructureEffect": 1,
+          "consequence": "q1 consequence text 1"
         },
         {
           "choiceId": 2,
           "option": "Choose and move to 3",
           "densityEffect": 1,
-          "infrastructureEffect": 1
+          "infrastructureEffect": 1,
+          "consequence": "q1 consequence text2"
         }
       ]
     },
@@ -30,17 +32,19 @@
           "choiceId": 1,
           "option": "Choose and move to 2",
           "densityEffect": -1,
-          "infrastructureEffect": -1
+          "infrastructureEffect": -1,
+          "consequence": "q2 consequence text 1"
         },
         {
           "choiceId": 2,
           "option": "Choose and move to 3",
           "densityEffect": -1,
-          "infrastructureEffect": -1
+          "infrastructureEffect": -1,
+          "consequence": "q2 consequence text 2"
         }
       ]
     },
-    "event": "Test",
-    "fact": "Testing"
+    "event": "this is a test event for q2",
+    "fact": "this is a test event for q2"
   }
 ]
