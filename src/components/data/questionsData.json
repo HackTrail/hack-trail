@@ -9,21 +9,21 @@
         "option": "This makes me uncomfortable, I vote for single family zoning.",
         "densityEffect": -1,
         "infrastractureEffect": 0,
-        "consequence": "People are over crowding in single family homes creating squalid conditions"
+        "consequence": "People are over crowding in single family homes creating squalid conditions."
         },
         {
           "choiceId": 2,
           "option": "Let's welcome them and make our neighborhood more diverse!",
           "densityEffect": 1,
           "infrastractureEffect": 0,
-          "consequence": "Apartments are built to accommodate spiking population of folks who can't afford single family homes"
+          "consequence": "Apartments are built to accommodate spiking population of folks who can't afford single family homes."
         },
         {
           "choiceId": 3,
           "option": "I mind my own business and keep to myself.",
           "densityEffect": -1,
           "infrastractureEffect": 0,
-          "consequence": "People are over crowding in single family homes creating squalid conditions"
+          "consequence": "People are over crowding in single family homes creating squalid conditions."
         }
       ]
     },
