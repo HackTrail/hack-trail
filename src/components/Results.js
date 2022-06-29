@@ -1,6 +1,5 @@
 import React from "react"
 import Badges from "./Badges"
-import getQuestionAnswerTally from "../db/firestore"
 
 
 const Results = () => {
