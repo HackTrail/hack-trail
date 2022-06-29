@@ -52,9 +52,9 @@
         {
           "choiceId": 3,
           "option": "There's more money to be made in a neighborhood if different housing types are available.  Exclusionary zoning isn't economically smart, strike it down and deem it unconstitutional.",
-          "densityEffect": -1,
+          "densityEffect": 1,
           "infrastructureEffect": 0,
-          "consequence": "The city has few places where dorm housing is allowed, preventing the university from expanding as much as they want.  Students must be extremely privileged to attend the university."
+          "consequence": "The city has very few restrictions on apartments so the university is able to easily find developers to build a variety of new dorms throughout the area.  The university is able to attract some incredible talent and the town becomes known for scientific discoveries and cultural events!"
         },
         {
           "choiceId": 4,
