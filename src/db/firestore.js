@@ -63,6 +63,8 @@ export const getQuestionAnswerTally = async (questionId, answerId) => {
     }
 }
 
+export default getQuestionAnswerTally()
+
 export async function setQuestion(questionId) {
     let questionRef = doc(db, 'questions', questionId)
     await setDoc(questionRef, {})
