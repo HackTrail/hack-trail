@@ -11,7 +11,8 @@ const Question = (props) => {
         const infrastructureEffect = props.options[choiceIndex].infrastructureEffect
         props.updateScores(densityEffect, infrastructureEffect)
 
-        props.nextInfo()
+        props.nextEvent(choiceIndex)
+
     }
 
     return (

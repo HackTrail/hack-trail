@@ -6,6 +6,7 @@ import QuestionPrompt from './components/QuestionPrompt';
 import End from './components/End';
 import Start from './components/Start';
 import Info from './components/Info';
+import Event from './components/Event';
 
 import startImage from './images/start_screen.png';
 import { clearChoicesRecord, recordBadge } from "./utils/utils";
@@ -43,6 +44,9 @@ function App() {
   const [isInInfo, setIsInInfo] = useState(false);
   const [densityScore, setDensityScore] = useState(0);
   const [infrastructureScore, setInfrastructureScore] = useState(0);
+  const [isInEvent, setInEvent] = useState(false);
+  const [selectedChoice, setSelectedChoice] = useState(-1);
+
 
   const startGame = () => {
     clearChoicesRecord()
@@ -56,6 +60,7 @@ function App() {
   }
 
   const nextInfo = () => {
+    setInEvent(false);
     setIsInInfo(true);
   }
 
@@ -63,6 +68,11 @@ function App() {
     setDensityScore(densityScore+densityEffect)
     setInfrastructureScore(infrastructureScore+infrastructureEffect)
   }
+
+ const nextEvent = (choiceId) => {
+  setSelectedChoice(choiceId);
+  setInEvent(true);
+ }
 
   const getEnding = () => {
     let data = {}
@@ -83,15 +93,23 @@ function App() {
   const questions = require('./components/data/questionsData.json')
   const numQuestions = Object.keys(questions).length
 
+  const getConsequence = (choiceId) => {
+    return questions[questionsSeen].question.options[choiceId].consequence
+  }
+
   const game = () => {
       if (isInStart) {   
         return <Start startGame={startGame} image={startImage} questions={questions} />;
+      }
+      if(isInEvent) {
+        const consequence = getConsequence(selectedChoice)
+        return <Event nextInfo={nextInfo} image={questions[questionsSeen].question.image} event={questions[questionsSeen].event} consequence={consequence} />;
       }
       if (isInInfo) {   
         return <Info nextQuestion={nextQuestion} text={questions[questionsSeen].fact} />;
       }
       if (questionsSeen < numQuestions) { 
-        return <QuestionPrompt nextInfo={nextInfo} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
+        return <QuestionPrompt nextEvent={nextEvent} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       else {
         return <End data={getEnding()} />
