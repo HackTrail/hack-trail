@@ -2,49 +2,280 @@
   {
     "id": 1,
     "question": {
-      "text": "What do you choose?",
-      "image": "q1_house_1.png",
+      "text": "You hear about a new business coming to town and you don't approve of the new owners. What do you want to tell the politicians and neighbors?",
+      "image": "q1_ballot.png",
       "options": [{
-          "choiceId": 1,
-          "option": "Choose and move to 2",
-          "densityEffect": 1,
-          "infrastructureEffect": 1,
-          "consequence": "q1 consequence text 1"
+        "choiceId": 1,
+        "option": "This makes me uncomfortable, I vote for single family zoning.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0,
+        "consequence": "q1 consequence for choice 1"
         },
         {
           "choiceId": 2,
-          "option": "Choose and move to 3",
+          "option": "Let's welcome them and make our neighborhood more diverse!",
           "densityEffect": 1,
-          "infrastructureEffect": 1,
-          "consequence": "q1 consequence text2"
+          "infrastractureEffect": 0,
+          "consequence": "q1 consequence for choice 2"
+        },
+        {
+          "choiceId": 3,
+          "option": "I mind my own business and keep to myself.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0,
+          "consequence": "q1 consequence for choice 3"
         }
       ]
     },
     "event": "Sudden uptick in immigration from Europe",
-    "fact": "in 1914 Duncan McDuffie eal estate developer Duncan McDuffie was one of the early proponents of single-family zoning in this neighborhood of Berkeley to prevent a dance hall owned by a Black resident from moving into houses he was trying to sell. He worried that families of color moving into the neighborhood would decrease the desirability of the neighborhood and decrease property values. By advocating for single-family zoning, McDuffie and other developers at the time were attempting to price out social groups whom they deemed to be less desirable for the neighborhood.[1] This makes single-family zoning one of many exclusionary zoning policies intended to limit who was able to afford living in a certain neighborhood. The goal of limiting certain neighborhoods to only single-family homes meant that only families who could afford to buy an entire house could live in the neighborhood. There was not the option to subdivide housing so that families who could not afford to buy the whole property could live in smaller units."
+    "fact": "in 1914, real estate developer Duncan McDuffie was one of the early proponents of single-family zoning in Berkeley, CA to prevent a dance hall owned by a Black resident from moving into houses he was trying to sell. He worried that families of color moving into the neighborhood would decrease the desirability of the neighborhood and decrease property values. By advocating for single-family zoning, McDuffie and other developers at the time were attempting to price out social groups whom they deemed to be less desirable for the neighborhood.[1] This makes single-family zoning one of many exclusionary zoning policies intended to limit who was able to afford living in a certain neighborhood. The goal of limiting certain neighborhoods to only single-family homes meant that only families who could afford to buy an entire house could live in the neighborhood. There was not the option to subdivide housing so that families who could not afford to buy the whole property could live in smaller units."
   },
   {
     "id": 2,
-    "question": {
-      "text": "What do you choose?",
-      "image": "q2_trees_2.png",
+    "question": { 
+      "text": "Single Family Zoning is being argued in the Supreme Court. Luckily you know a few of the Justices and they will listen to your opinion. What do you want to tell them?",
+      "image": "q2_house.png",
       "options": [{
-          "choiceId": 1,
-          "option": "Choose and move to 2",
-          "densityEffect": -1,
-          "infrastructureEffect": -1,
-          "consequence": "q2 consequence text 1"
+        "choiceId": 1,
+        "option": "The reasons people live in different types of housing is economic, this zoning segregates people and exclusionary zoning should be struck down.",
+        "densityEffect": 1,
+        "infrastractureEffect": 0
         },
         {
           "choiceId": 2,
-          "option": "Choose and move to 3",
+          "option": "It's important to protect the character of a neighborhood. If a majority of people in a region want to exclude certain housing types, they should be free to do so.",
           "densityEffect": -1,
-          "infrastructureEffect": -1,
-          "consequence": "q2 consequence text 2"
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 3,
+          "option": "There's more money to be made in a neighborhood if different housing types are available.  Exclusionary zoning isn't economically smart, strike it down and deem it unconstitutional.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 4,
+          "option": "This isn't happening in my town so I don't think it's right for me to have an opinion here.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
         }
       ]
     },
-    "event": "this is a test event for q2",
-    "fact": "this is a test event for q2"
+    "event": "The town university is so popular that it wants to expand.",
+    "fact": "In 1926, the Supreme Court upheld exclusionary zoning in a vote of 6-3 during the case Euclid v. Ambler. Exclusionary zoning today is also known as Euclidean zoning for this reason."
+  },
+  {
+    "id": 3,
+    "question":{
+      "text": "Your coworker bought a plot of land in your neighborhood. They want to split it into two and build four tiny homes - one to live in and 3 to rent out. They are complaining to you that the city won't let them because there is a minimum lot size that a house can be in the region. He asked if you could influence city council to lower the size to allow for a tiny home. What do you want to do?",
+      "image": "q3_law.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "Tiny homes are neat, why not? Advocate to get minimum lot size significantly lowered.",
+        "densityEffect": 1,
+        "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 2,
+          "option": "Having renters living in tiny homes could change the character of the neighborhood. This doesn't seem like a good idea.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 3,
+          "option": "They should have looked into this before buying the land. Sounds like their problem, not mine.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 4,
+          "option": "If the minimum lot size is lowered, I could divide my lot in order to build a tiny home for my aging mother to live in. This would help me out too! You advocate for this change.",
+          "densityEffect": 1,
+          "infrastractureEffect": 1
+        }
+      ]
+    },
+    "event": "Your mom decides to downsize, she is sick of taking care of a big house, and ready for a fresh start, plus she wants to be nearby to help out with your new baby.",
+    "fact": "Minimum Lot Sizes used to be necessary to allow room for septic tanks and wells, but now are no longer needed. Austin, TX has an average lot size of 8,629 sq ft, and Philadelphia, PA has an average lot size of 1,089 sq ft."
+  },
+  {
+    "id": 4,
+    "question": {
+      "text": "Your friend purchased a brand new 1955 Chevy Bel Air and wants to be sure they can park it for free anywhere in the city. They ask for your help bringing this plan to life. What do you tell city council?",
+      "image": "q4_bicycle.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "You don't believe in the city subsidizing free parking. Let the market decide how much parking is built.",
+        "densityEffect": 1,
+        "infrastractureEffect": 1
+        },
+        {
+          "choiceId": 2,
+          "option": "You think we can move more people with public transit and don't want to fund free parking.",
+          "densityEffect": 1,
+          "infrastractureEffect": 1
+        },
+        {
+          "choiceId": 3,
+          "option": "You have a nice car too and love the idea. We need as much parking as possible to prevent crowded streets!",
+          "densityEffect": -1,
+          "infrastractureEffect": -1
+        }
+      ]
+    },
+    "event": "The city decides to implement \"First Fridays\" where the first Friday of the month is dedicated to local art galleries and musicians, an event for the whole family",
+    "fact": "Transportation planners point out that parking minimums increase the distance between destinations, making cities and towns less walkable, thereby perpetuating a cycle of less viable transit and mobility options, the need for more driving, and—subsequently—even more parking."
+  },
+  {
+    "id": 5,
+    "question": {
+      "text": "A developer wants to build 50 apartments on an empty lot with 50% of units dedicated to homeless veterans. They didn't do an extensive environment review though... What do you want your city council friends to do?",
+      "image": "q5_trees.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "50 apartments? That will be loud and cause more traffic. Get them to oppose it with any means necessary.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 2,
+          "option": "Environmental reviews must ALWAYS be done. This developer should be sued.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 3,
+          "option": "Hmm... it was already an empty lot. I'd rather they just build the housing. Get it expedited!",
+          "densityEffect": 1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 4,
+          "option": "I'd rather stay out of this, they can do whatever they want since it's not on my property.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        }
+      ]
+    },
+    "event": "The Federal government distributes funds to build housing for homeless veterans",
+    "fact": "Environmental studies are often used to prevent new housing from being built in cities, and often causes environment destruction outside of cities. In LA, a local nonprofit developer proposed several years ago to build a 49-unit apartment building on the lot—with 24 homes set aside for disabled veterans experiencing homelessness—it was slammed with an environmental lawsuit. A single angry neighbor was able to delay the project, thanks to a piece of legislation known as the California Environmental Quality Act. Although a 189-page assessment found that all possible environmental effects could be mitigated, the suit demanded that planners spend years conducting additional environmental research. The site—covered in cracked concrete and lined with a barbed-wire-topped chain-link fence—remains empty to this day."
+  },
+  {
+    "id": 6,
+    "question": {
+      "text": "Earthquake!The main highway by the waterfront has collapsed. What should the city do?",
+      "image": "q6_earthquake.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "Highways are important infrastructure for a city, especially for people who live in the suburbs.  Rebuild it at any cost.",
+        "densityEffect": -1,
+        "infrastractureEffect": -1
+        },
+        {
+          "choiceId": 2,
+          "option": "I don't live near the highway so I don't have an opinion, they can do anything they want.",
+          "densityEffect": -1,
+          "infrastractureEffect": -1
+        },
+        {
+          "choiceId": 3,
+          "option": "It's expensive to rebuild. Let's clean it up and convert it to a boulevard so we can build commercial and residential space in its place.",
+          "densityEffect": 1,
+          "infrastractureEffect": 1
+        }
+      ]
+    },
+    "event": "You are awarded an honorable citizen award from the mayor and get invited to a fancy banquet at the waterfront downtown.",
+    "fact": "In 1989, an earthquake deeply damaged the Embarcadero Freeway in San Francisco. The freeway was cleared and converted into a boulevard - housing in the area increased 51% and jobs increased 23%."
+  },
+  {
+    "id": 7,
+    "question": {
+      "text": "Your city is experiencing a tragic epidemic of children being killed by cars when playing in the street. What should the city do?",
+      "image": "q7_child.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "Create a media campaign targeted  at parents shaming them for allowing  their children to play in the street. It's dangerous!",
+        "densityEffect": 0,
+        "infrastractureEffect": -1
+        },
+        {
+          "choiceId": 2,
+          "option": "Children should be able to play in public streets without the risk of death.  You join a group of protestors to lie in the street and demand bicycle infrastructure instead",
+          "densityEffect": 0,
+          "infrastractureEffect": 1
+        },
+        {
+          "choiceId": 3,
+          "option": "Sadly this is something out of our control. Parents are solely responsible for their children, they need to be more responsible but there's nothing I feel like I can personally do to stop this.",
+          "densityEffect": 0,
+          "infrastractureEffect": -1
+        }
+      ]
+    },
+    "event": "It's your child's first day of school!",
+    "fact": "In the 1970s in Amsterdam, 9 people were killed everyday in traffic. People started mass protests to stop roadway expansion and demand bicycling infrastructure. Their main slogan was \"stop the child murder\". The Dutch are known for their incredible bicycling infrastructure today, and people of all ages and abilities are mobile in their cities."
+  },
+  {
+    "id": 8,
+    "question": {
+      "text": "Your neighbor posts on Nextdoor about how they're concerned your neighborhood doesn't have much racial and socioeconomic diversity. They ask what the neighborhood could do to change this?",
+      "image": "q8_people.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "Sadly, people tend to prefer living near people like them. We should allow them to make their own choices naturally and not force anything.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 2,
+          "option": "There must be some way to be more inclusive in our neighborhood. Comment that you are committed to changing this and are open to creative ideas to incentivize people from other backgrounds to move here.",
+          "densityEffect": 1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 3,
+          "option": "It's not right to categorize people by their race or income. Don't get involved here.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        }
+      ]
+    },
+    "event": "You have dinner reservations for your anniversary this coming weekend at your favorite restaurant.",
+    "fact": "The National Fair Share Act was proposed by John Boger in 1993. He proposed that non-integrated neighborhoods should lose mortgage interest and property tax deductions unless they have a proportion of African American and low- and moderate-income population in its region."
+  },
+  {
+    "id": 9,
+    "question": {
+      "text": "A developer wants to build 3bd/3bath rowhomes on a lot in your neighborhood, but the current laws require 5ft of space between houses. They ask you if you can advocate for changing this rule for them. What do you do?",
+      "image": "q9_rowhomes.png",
+      "options": [{
+        "choiceId": 1,
+        "option": "Rowhomes seem dangerous and noisy, especially in the case of a fire happening. Tell him sadly you cannot help get this project approved.",
+        "densityEffect": -1,
+        "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 2,
+          "option": "The law is the law, he shouldn't have put so much effort into a plan that is illegal. Not worth my time to help.",
+          "densityEffect": -1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 3,
+          "option": "You've seen rowhomes in places like Brooklyn, London, and San Francisco (Painted Ladies!) and find them quite charming. You call your friend in city council to get them to abolish setback laws.",
+          "densityEffect": 1,
+          "infrastractureEffect": 0
+        },
+        {
+          "choiceId": 4,
+          "option": "You wouldn't want to live in a rowhome yourself (sharing a wall? no thanks!) but you know some young folks who have wanted one and couldn't find one anywhere nearby. You think of them and decide to help the developer advocate for the end of 'setback laws'",
+          "densityEffect": 1,
+          "infrastractureEffect": 0
+        }
+      ]
+    },
+    "event": "You have a rough day at work and are getting home at the end of the day.",
+    "fact": "Modern construction codes require fireproofing shared walls. Rowhomes can add charm and community to a neighborhood and are a great option for families to live in a city center, however are illegal to build in most cities."
   }
 ]

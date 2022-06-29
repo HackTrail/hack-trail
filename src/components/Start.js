@@ -6,7 +6,7 @@ const Start = ({startGame, image, questions}) => {
         <div className="wrapper">
             <h1>McMuffy's World</h1>
             <ImageContainer classname="center" image={image}/>
-            <p>Pending an actual description. For now, I love cats and especially cats named Noodle! She's the best. Meow meow.</p>
+            <p>Hi there, Muffin McMuffy.  You're the new guy in town and it's time to make some decisions. Welcome to the neighborhood.</p>
             <div className="centered-button-wrapper">
                 <button onClick={startGame}>Start</button>
             </div>
