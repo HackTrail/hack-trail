@@ -7,7 +7,7 @@ import End from './components/End';
 import Start from './components/Start';
 import Info from './components/Info';
 import Event from './components/Event';
-
+import Results from './components/Results';
 import startImage from './images/start_screen.png';
 import { clearChoicesRecord, recordBadge } from "./utils/utils";
 
@@ -46,6 +46,7 @@ function App() {
   const [infrastructureScore, setInfrastructureScore] = useState(0);
   const [isInEvent, setInEvent] = useState(false);
   const [selectedChoice, setSelectedChoice] = useState(-1);
+  const [isInResults, setIsInResults] = useState(false);
 
 
   const startGame = () => {
@@ -74,6 +75,10 @@ function App() {
   setInEvent(true);
  }
 
+ const getResults = () => {
+      setIsInResults(true)
+  }
+  
   const getEnding = () => {
     let data = {}
     if (densityScore >= 4 && infrastructureScore >= 1) {
@@ -111,8 +116,11 @@ function App() {
       if (questionsSeen < numQuestions) { 
         return <QuestionPrompt nextEvent={nextEvent} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
+      if (isInResults) {
+        return <Results/>
+      }
       else {
-        return <End data={getEnding()} />
+        return <End data={getEnding()} getResults={getResults}/>
       }
     }
 
