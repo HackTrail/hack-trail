@@ -1,5 +1,4 @@
 import React from "react"
-import './ImageContainer.css'
 
 const ImageContainer = ({className, image}) => {
     return (
