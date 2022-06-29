@@ -111,3 +111,36 @@ button:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+.choices {
+  background-color: #F3F3F3;
+  padding: 20px;
+  border: 3px solid #C82B2B;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prompt {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.choice-wrapper {
+  flex-basis: 50%;
+}
+
+.choice {
+  font-size: 20px;
+}
+
+.tally {
+  font-size: 24px;
+  color: #C82B2B;
+}
+
+.result-prompt {
+  padding: 40px;
+  border: 3px solid #555555;
+  border-radius: 8px;
+}

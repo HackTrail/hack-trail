@@ -57,10 +57,27 @@ const Results = ({questions, resetGame}) => {
     return (
         <div className="wrapper">
             <h2>What did others choose?</h2>
-            <div>
+            <div className="result-prompt">
                 {
                     mappings.map((mapping) => {
-                        return (<p>{mapping["text"]}</p>)
+                        return (
+                            <div>
+                                <p className="prompt">{mapping["text"]}</p>
+                                <div className="choices">
+                                {
+                                    mapping.choices[0].map((choice) => {
+                                        console.log(choice)
+                                        return (
+                                            <div className="choice-wrapper">
+                                                <p className="choice">{choice["text"]}</p>
+                                                <p className="tally">{choice["tallies"]}</p>
+                                            </div>
+                                        )
+                                    })
+                                }
+                                </div>
+                            </div>
+                        )
                     })
                 }
             </div>
