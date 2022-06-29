@@ -9,7 +9,7 @@ import Info from './components/Info';
 import Event from './components/Event';
 import Results from './components/Results';
 import startImage from './images/start_screen.png';
-import { clearChoicesRecord, recordBadge } from "./utils/utils";
+import { clearChoicesRecord, recordBadge } from './utils/utils';
 
 const endInfo = {
   'highDensityHighInfrastructure': {
@@ -47,7 +47,6 @@ function App() {
   const [isInEvent, setInEvent] = useState(false);
   const [selectedChoice, setSelectedChoice] = useState(-1);
   const [isInResults, setIsInResults] = useState(false);
-
 
   const startGame = () => {
     clearChoicesRecord();
@@ -128,7 +127,7 @@ function App() {
         return <QuestionPrompt nextEvent={nextEvent} updateScores={updateScores} id={questions[questionsSeen].id} text={questions[questionsSeen].question.text} image={questions[questionsSeen].question.image} options={questions[questionsSeen].question.options} />;
       }
       if (isInResults) {
-        return <Results resetGame={resetGame} />
+        return <Results questions={questions} resetGame={resetGame} />
       }
       else {
         return <End data={getEnding()} getResults={getResults}/>
