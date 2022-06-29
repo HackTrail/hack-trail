@@ -1,6 +1,6 @@
 import React from "react"
 
-cont Badges = ({props}) => {
+const Badges = ({props}) => {
     return (
         <div>
             Badges
