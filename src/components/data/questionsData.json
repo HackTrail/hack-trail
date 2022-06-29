@@ -6,14 +6,14 @@
       "image": "q1_ballot.png",
       "options": [{
         "choiceId": 1,
-        "option": "This makes me uncomfortable, I vote for single family zoning.",
+        "option": "This makes me uncomfortable, I vote for single family zoning as a way to keep newcomers out.",
         "densityEffect": -1,
         "infrastractureEffect": 0,
         "consequence": "People are over crowding in single family homes creating squalid conditions."
         },
         {
           "choiceId": 2,
-          "option": "Let's welcome them and make our neighborhood more diverse!",
+          "option": "Let's welcome them and make our neighborhood more interesting!",
           "densityEffect": 1,
           "infrastractureEffect": 0,
           "consequence": "Apartments are built to accommodate spiking population of folks who can't afford single family homes."
@@ -85,21 +85,21 @@
           "option": "Having renters living in tiny homes could change the character of the neighborhood. This doesn't seem like a good idea.",
           "densityEffect": -1,
           "infrastractureEffect": 0,
-          "consequence": "Your mom can't find a smaller place for herself so stays where she is, a 2-hour drive away.  You spend $1,500 on childcare a month and have to cut back on your retirement savings."
+          "consequence": "Your mom can't find a smaller place for herself so stays where she is, a 2-hour drive away. You spend $1,500 on childcare a month and have to cut back on your retirement savings."
         },
         {
           "choiceId": 3,
           "option": "They should have looked into this before buying the land. Sounds like their problem, not mine.",
           "densityEffect": -1,
           "infrastractureEffect": 0,
-          "consequence": "Your mom can't find a smaller place for herself so stays where she is, a 2-hour drive away.  You spend $1,500 on childcare a month and have to cut back on your retirement savings."
+          "consequence": "Your mom can't find a smaller place for herself so stays where she is, a 2-hour drive away. You spend $1,500 on childcare a month and have to cut back on your retirement savings."
         },
         {
           "choiceId": 4,
           "option": "If the minimum lot size is lowered, I could divide my lot in order to build a tiny home for my aging mother to live in. This would help me out too! You advocate for this change.",
           "densityEffect": 1,
           "infrastractureEffect": 1,
-          "consequence": "The city relaxes regulations and you're able to split up your lot and order a pre-fab small house to put on the smaller lot.  Your mom frequently criticizes your landscaping choices but she is now the reason you can get enough sleep in one day, since she's right there to help with the baby."
+          "consequence": "The city relaxes regulations and you're able to split up your lot and order a pre-fab small house to put on the smaller lot. Your mom frequently criticizes your landscaping choices but she is now the reason you can get enough sleep in one day, since she's right there to help with the baby."
         }
       ]
     },
@@ -116,14 +116,14 @@
         "option": "You don't believe in the city subsidizing free parking. Let the market decide how much parking is built.",
         "densityEffect": 1,
         "infrastractureEffect": 1,
-        "consequence": "The main street is alive on First Fridays and you walk there from your house with your entire family.  Street musicians perform on the sidewalks, interesting foods are sold from street vendors, and you watch artists paint the sunset at the park."
+        "consequence": "The main street is alive on First Fridays and you walk there from your house with your entire family. Street musicians perform on the sidewalks, interesting foods are sold from street vendors, and you watch artists paint the sunset at the park."
         },
         {
           "choiceId": 2,
           "option": "You think we can move more people with public transit and don't want to fund free parking.",
           "densityEffect": 1,
           "infrastractureEffect": 1,
-          "consequence": "The main street is alive on First Fridays and you walk there from your house with your entire family.  Street musicians perform on the sidewalks, interesting foods are sold from street vendors, and you watch artists paint the sunset at the park."
+          "consequence": "The main street is alive on First Fridays and you walk there from your house with your entire family. Street musicians perform on the sidewalks, interesting foods are sold from street vendors, and you watch artists paint the sunset at the park."
         },
         {
           "choiceId": 3,
@@ -147,21 +147,21 @@
         "option": "50 apartments? That will be loud and cause more traffic. Get them to oppose it with any means necessary.",
         "densityEffect": -1,
         "infrastractureEffect": 0,
-        "consequence": "City regulations mean the most cost effective place to build is outside the city in rural areas.  More natural environment outside the city is destroyed for new homes since that's the only land available."
+        "consequence": "City regulations mean the most cost effective place to build is outside the city in rural areas. More natural environment outside the city is destroyed for new homes since that's the only land available."
         },
         {
           "choiceId": 2,
           "option": "Environmental reviews must ALWAYS be done. This developer should be sued.",
           "densityEffect": -1,
           "infrastractureEffect": 0,
-          "consequence": "City regulations mean the most cost effective place to build is outside the city in rural areas.  More natural environment outside the city is destroyed for new homes since that's the only land available."
+          "consequence": "City regulations mean the most cost effective place to build is outside the city in rural areas. More natural environment outside the city is destroyed for new homes since that's the only land available."
         },
         {
           "choiceId": 3,
           "option": "Supporting veterans is everything! Let's get them the housing they deserve, plus the empty lot isn't doing anything for anyone. It's a win/win for the neighborhood and the Vets!",
           "densityEffect": 1,
           "infrastractureEffect": 0,
-          "consequence": "Dense housing is created in the city for veterans.  They enjoy living near each other and playing chess in the park, meeting at the local coffee shop, and running into old pals."
+          "consequence": "Dense housing is created in the city for veterans. They enjoy living near each other and playing chess in the park, meeting at the local coffee shop, and running into old pals."
         },
         {
           "choiceId": 4,
@@ -178,14 +178,14 @@
   {
     "id": 6,
     "question": {
-      "text": "Earthquake!The main highway by the waterfront has collapsed. What should the city do?",
+      "text": "Earthquake! The main highway by the waterfront has collapsed. What should the city do?",
       "image": "q6_earthquake.png",
       "options": [{
         "choiceId": 1,
-        "option": "Highways are important infrastructure for a city, especially for people who live in the suburbs.  Rebuild it at any cost.",
+        "option": "Highways are important infrastructure for a city, especially for people who live in the suburbs. Rebuild it at any cost.",
         "densityEffect": -1,
         "infrastractureEffect": -1,
-        "consequence": "You and your partner drive downtown to attend the ceremony, you get stuck in traffic and you become very stressed.  You drive around looking for parking and end up missing the first 30 minutes of the event."
+        "consequence": "You and your partner drive downtown to attend the ceremony, you get stuck in traffic and you become very stressed. You drive around looking for parking and end up missing the first 30 minutes of the event."
         },
         {
           "choiceId": 2,
@@ -196,7 +196,7 @@
         },
         {
           "choiceId": 3,
-          "option": "It's expensive to rebuild. Let's clean it up and convert it to a boulevard so we can build commercial and residential space in its place.",
+          "option": "It's expensive to rebuild, and we should be investing in public transportation and bike lanes to clean up the environment not putting more cars on the road. Let's clean it up and convert it to a boulevard so we can build commercial and residential space in its place.",
           "densityEffect": 1,
           "infrastractureEffect": 1,
           "consequence": "You and your partner take the train downtown and sit by the water for a while before the banquet, reflecting on your hard work that led you to this award. You can hear the birds and enjoy people watching on the pier together before going to the banquet."
@@ -216,11 +216,11 @@
         "option": "Create a media campaign targeted  at parents shaming them for allowing  their children to play in the street. It's dangerous!",
         "densityEffect": 0,
         "infrastractureEffect": -1,
-        "consequence": "You drive your child to school and someone cuts you off, putting you in a bad mood. When you arrive at the school, there's so many other parents in cars that you only have 30 seconds to wish your child good luck and wave goodbye.  You notice another child walking up behind your car, coughing after breathing in exhaust fumes."
+        "consequence": "You drive your child to school and someone cuts you off, putting you in a bad mood. When you arrive at the school, there's so many other parents in cars that you only have 30 seconds to wish your child good luck and wave goodbye. You notice another child walking up behind your car, coughing after breathing in exhaust fumes."
         },
         {
           "choiceId": 2,
-          "option": "Children should be able to play in public streets without the risk of death. You join a group of protestors to lie in the street and demand bicycle infrastructure instead",
+          "option": "Children should be able to play in public streets without the risk of death. I'm starting a protest group and we're going to lie in the street and demand bicycle infrastructure instead.",
           "densityEffect": 0,
           "infrastractureEffect": 1,
           "consequence": "You and your child bike together to the school, side by side. Your child tells you that they're most excited about science class and making friends. You drop them off and take a picture together at the school entrance and then bike to work."
@@ -275,31 +275,31 @@
       "image": "q9_rowhomes.png",
       "options": [{
         "choiceId": 1,
-        "option": "I think row homes seem dangerous and noisy, especially in the case of  fire. I have to tell him I just can't help get this project approved.",
+        "option": "I think row homes seem dangerous and noisy, especially in the case of fire. I have to tell him I just can't help get this project approved.",
         "densityEffect": -1,
         "infrastractureEffect": 0,
-        "consequence": "You park your car in the garage and walk into your home.  You don't see anyone outside.  You sit in your recliner and watch the news and drink a beer, feeling a bit lonely and sad."
+        "consequence": "You park your car in the garage and walk into your home. You don't see anyone outside. You sit in your recliner and watch the news and drink a beer, feeling a bit lonely and sad."
         },
         {
           "choiceId": 2,
           "option": "The law is the law, he shouldn't have put so much effort into a plan that's illegal. This isn't worth my time.",
           "densityEffect": -1,
           "infrastractureEffect": 0,
-          "consequence": "You park your car in the garage and walk into your home.  You don't see anyone outside.  You sit in your recliner and watch the news and drink a beer, feeling a bit lonely and sad."
+          "consequence": "You park your car in the garage and walk into your home. You don't see anyone outside. You sit in your recliner and watch the news and drink a beer, feeling a bit lonely and sad."
         },
         {
           "choiceId": 3,
           "option": "I've always loved the row homes in places like Brooklyn, London, and San Francisco (Painted Ladies!), and find them quite charming. I'll reach out to my friend in city council to see if there is a way to abolish setback laws.",
           "densityEffect": 1,
           "infrastractureEffect": 0,
-          "consequence": "You walk home from work and sit on your front step.  Your neighbor is outside too and asks if you're okay.  They bring you a glass of iced tea and you sit together, people watching and letting off steam.  You're glad to have friendly neighbors to lend a hand  when times are hard."
+          "consequence": "You walk home from work and sit on your front step. Your neighbor is outside too and asks if you're okay. They bring you a glass of iced tea and you sit together, people watching and letting off steam. You're glad to have friendly neighbors to lend a hand  when times are hard."
         },
         {
           "choiceId": 4,
-          "option": "Living in a row home (sharing a wall?) sounds awful to me, but I know some young folks who have wanted one and couldn't find one anywhere nearby.  I think helping the developer advocate for the end of row home 'setback laws' is a good idea.",
+          "option": "Living in a row home (sharing a wall?) sounds awful to me, but I know some young folks who have wanted one and couldn't find one anywhere nearby. I think helping the developer advocate for the end of row home 'setback laws' is a good idea.",
           "densityEffect": 1,
           "infrastractureEffect": 0,
-          "consequence": "You walk home from work and sit on your front step.  Your neighbor is outside too and asks if you're okay.  They bring you a glass of iced tea and you sit together, people watching and letting off steam.  You're glad to have friendly neighbors to lend a hand  when times are hard."
+          "consequence": "You walk home from work and sit on your front step. Your neighbor is outside too and asks if you're okay. They bring you a glass of iced tea and you sit together, people watching and letting off steam. You're glad to have friendly neighbors to lend a hand  when times are hard."
         }
       ]
     },
